@@ -17,7 +17,8 @@ h2 {
 }
 
 h2,
-.body_text {
+.body_text,
+.song_citation {
   font-family: "Merriweather", serif;
 }
 
@@ -32,6 +33,7 @@ h2,
 .song_citation {
   font-size: 20px;
   font-style: italic;
+  color: #861024;
 }
 
 .text_formatting {
@@ -54,4 +56,48 @@ button {
   max-width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.horisontal_line {
+  border-bottom: 1px solid #934f28;
+  margin-bottom: 5px;
+  width: 90%;
+}
+
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+}
+
+@media screen and (min-width: 1680px) {
+  .wrapper {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
+@media screen and (min-width: 1780px) {
+  .wrapper {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .wrapper {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}
+
+@media screen and (min-width: 2100px) {
+  .wrapper {
+    margin-left: 400px;
+    margin-right: 400px;
+  }
 }

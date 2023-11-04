@@ -1,3 +1,39 @@
+body {
+  text-align: center;
+}
+
 .hero_image {
   height: auto;
+  margin-bottom: 0px;
+}
+
+h1 {
+  color: #edeae4;
+  font-size: 30px;
+}
+
+.latest_post_carousel {
+  background-color: #282c11;
+  margin-top: 0;
+  padding-top: 15px;
+}
+
+.song_citation {
+  max-width: 300px;
+}
+
+.christmas_countdown_clock {
+  font-family: Lily Script One, Open-Sans;
+  font-size: 35px;
+  line-height: 20px;
+}
+
+.christmas_countdown_text {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+}
+
+.christmas_countdown_clock,
+.christmas_countdown_text {
+  color: #934f28;
 }

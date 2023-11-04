@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Raleway:wght@200;300&display=swap");
     </style>
     <script defer src="../js/api.js" type="module"></script>
     <script defer src="../js/display_message.js" type="module"></script>
+    <script defer src="../js/index.js" type="module"></script>
     <script defer src="../js/script.js" type="module"></script>
     <link href="../css/style.css" rel="stylesheet" />
     <link href="../css/nav.css" rel="stylesheet" />
     <link href="../css/index.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="wrapper">
     <header>
       <h1 id="logo">Merry Christmas</h1>
     </header>
@@ -23,16 +24,15 @@
         class="hero_image background_images"
         src="../images/christmas_town.jpg"
       />
-      <h1 class="text_formatting">THIS IS A TEST HEADER</h1>
-      <h2 class="text_formatting">FOR MY CHRISTMAS BLOG</h2>
+      <section class="latest_post_carousel">
+        <h1 class="text_formatting">LATEST POSTS</h1>
+      </section>
       <p class="text_formatting song_citation">
-        "I must test if it works like it should. That would be great!"
+        “May your days be merry and bright, and may all your Christmases be
+        white”
       </p>
-      <p class="body_text">
-        This is the body text that I'm testing. It should look good.
-      </p>
-      <div id="post_container"></div>
-      <button class="button_text">Read more</button>
+      <hr class="horisontal_line" />
+      <div class="christmas_countdown_container"></div>
     </main>
     <footer></footer>
   </body>
