@@ -3,4 +3,41 @@
   font-size: 45px;
   color: #934f28;
   max-width: 210px;
+  text-align: left;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 540px) {
+}
+@media screen and (min-width: 600px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 880px) {
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 1440px) {
+}
+
+@media screen and (min-width: 1680px) {
+}
+
+@media screen and (min-width: 1780px) {
+}
+
+@media screen and (min-width: 1920px) {
+}
+
+@media screen and (min-width: 2100px) {
 }

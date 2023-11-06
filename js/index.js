@@ -2,10 +2,10 @@
 
 const countDownDate = new Date("Dec 24, 2023 00:00:01").getTime();
 const countdownContainer = document.querySelector(".christmas_countdown_container");
-const daysElement = document.createElement("p");
-const hoursElement = document.createElement("p");
-const minutesElement = document.createElement("p");
-const secondsElement = document.createElement("p");
+const daysElement = document.createElement("span");
+const hoursElement = document.createElement("span");
+const minutesElement = document.createElement("span");
+const secondsElement = document.createElement("span");
 const christmasCountdownText = document.createElement("p");
 
 daysElement.className = "christmas_countdown_clock";
@@ -29,10 +29,10 @@ const x = setInterval(function() {
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 
-  daysElement.textContent = days + " Days ";
-  hoursElement.textContent = hours + " Hours ";
-  minutesElement.textContent = minutes + " Minutes ";
-  secondsElement.textContent = seconds + " Seconds ";
+  daysElement.textContent = days + " d ";
+  hoursElement.textContent = " - " + hours + " h ";
+  minutesElement.textContent = " - " + minutes + " m ";
+  secondsElement.textContent = " - " + seconds + " s ";
   christmasCountdownText.className = "christmas_countdown_text";
   christmasCountdownText.textContent = "Until Christmas";
 
