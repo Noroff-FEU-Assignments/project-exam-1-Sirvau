@@ -1,10 +1,67 @@
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
 #logo {
   font-family: Lily Script One, Open-Sans;
-  font-size: 45px;
-  color: #934f28;
+  font-size: 42px;
+  text-decoration: none;
+}
+
+.logo_container {
   max-width: 210px;
   text-align: left;
+  margin: 15px 0 10px 20px;
+}
+
+.fa-bars {
+  margin: 10px;
+  padding: 10px;
+  font-size: 25px;
+}
+
+nav,
+#menu_checkbox {
+  display: none;
+}
+
+#menu_checkbox:checked ~ nav {
+  display: block;
+}
+
+nav {
+  position: absolute;
+  background-color: #edeae4;
+  top: 65px;
+  right: 0;
+  padding: 10px 20px;
+  border-radius: 0 0 0 15px;
+}
+
+nav .menu_item {
+  display: block;
+  padding: 10px 20px;
   text-decoration: none;
+  font-size: 18px;
+}
+
+nav .menu_item:hover {
+  background-color: #934f28;
+  color: #edeae4;
+  border-radius: 15px;
+}
+
+nav .active {
+  text-decoration: underline;
+}
+
+#logo,
+.fa-bars,
+.menu_item {
+  color: #934f28;
 }
 
 @media screen and (min-width: 480px) {
