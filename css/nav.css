@@ -38,12 +38,12 @@ nav {
   top: 65px;
   right: 0;
   padding: 10px 20px;
-  border-radius: 0 0 0 15px;
+  border-radius: 0 0 0 5px;
 }
 
 nav .menu_item {
   display: block;
-  padding: 10px 20px;
+  padding: 10px 25px;
   text-decoration: none;
   font-size: 18px;
 }
@@ -51,7 +51,7 @@ nav .menu_item {
 nav .menu_item:hover {
   background-color: #934f28;
   color: #edeae4;
-  border-radius: 15px;
+  border-radius: 30px;
 }
 
 nav .active {
