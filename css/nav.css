@@ -18,9 +18,10 @@ header {
 }
 
 .fa-bars {
-  margin: 10px;
-  padding: 10px;
+  margin: 15px;
+  padding: 15px;
   font-size: 25px;
+  cursor: pointer;
 }
 
 nav,
@@ -50,6 +51,7 @@ nav .menu_item {
 
 nav .menu_item:hover {
   background-color: #934f28;
+
   color: #edeae4;
   border-radius: 30px;
 }
@@ -65,36 +67,136 @@ nav .active {
 }
 
 @media screen and (min-width: 480px) {
+  #logo {
+    font-size: 45px;
+  }
+
+  .logo_container {
+    margin: 20px 0 20px 30px;
+  }
+
+  nav {
+    top: 75px;
+    padding: 10px 35px;
+  }
+
+  nav .menu_item {
+    padding: 10px 35px;
+  }
 }
 
 @media screen and (min-width: 540px) {
+  .logo_container {
+    margin-left: 50px;
+  }
+
+  .fa-bars {
+    margin-right: 25px;
+  }
 }
+
 @media screen and (min-width: 600px) {
+  .logo_container {
+    margin-left: 55px;
+  }
+
+  nav {
+    top: 80px;
+  }
+
+  nav .menu_item {
+    padding: 10px 45px;
+    font-size: 20px;
+  }
+
+  .fa-bars {
+    margin-right: 28px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  #menu_checkbox {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    position: static;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  nav .menu_item {
+    padding: 10px 20px;
+  }
+
+  .fa-bars {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 880px) {
+  #logo {
+    font-size: 48px;
+  }
+
+  nav {
+    padding-right: 50px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  #logo {
+    font-size: 55px;
+  }
+
+  .logo_container {
+    margin-left: 70px;
+  }
+
+  nav .menu_item {
+    padding: 12px 30px;
+    font-size: 22px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  #logo {
+    font-size: 60px;
+  }
+
+  .logo_container {
+    margin-left: 0;
+  }
+
+  nav {
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  nav .menu_item {
+    font-size: 24px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
+  #logo {
+    font-size: 70px;
+  }
+
+  nav .menu_item {
+    font-size: 26px;
+  }
 }
 
 @media screen and (min-width: 1680px) {
-}
+  #logo {
+    font-size: 80px;
+  }
 
-@media screen and (min-width: 1780px) {
-}
-
-@media screen and (min-width: 1920px) {
-}
-
-@media screen and (min-width: 2100px) {
+  nav .menu_item {
+    font-size: 28px;
+  }
 }
