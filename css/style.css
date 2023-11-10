@@ -3,6 +3,7 @@
 body {
   background-color: #edeae4;
   margin: auto;
+  text-rendering: optimizeLegibility;
 }
 
 /* Text  */
