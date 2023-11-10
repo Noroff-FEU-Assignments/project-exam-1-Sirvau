@@ -11,18 +11,26 @@ body {
 h1 {
   color: #edeae4;
   display: inline-block;
+  margin-top: auto;
+  margin-bottom: 20px;
 }
 
 .latest_post_carousel {
   background-color: #282c11;
   margin-top: 0;
   padding-top: 15px;
+  margin-bottom: auto;
 }
 
 .song_citation {
-  max-width: 300px;
+  max-width: 220px;
+  margin-top: 100px;
+  margin-bottom: auto;
 }
 
+.christmas_countdown_container {
+  margin-top: 100px;
+}
 .christmas_countdown_clock {
   font-family: Lily Script One, Open-Sans;
   font-size: 30px;
@@ -40,10 +48,16 @@ h1 {
 }
 
 /*Icons */
+.headline_and_icons_container {
+  display: flex;
+  justify-content: space-around;
+}
+
 .material-symbols-outlined {
   color: #edeae4;
-  font-size: 30px;
+  font-size: 40px;
   opacity: 50%;
+  align-self: flex-start;
 }
 
 @media screen and (min-width: 480px) {

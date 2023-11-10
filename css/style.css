@@ -3,7 +3,6 @@
 body {
   background-color: #edeae4;
   margin: auto;
-  overflow: hidden;
 }
 
 /* Text  */
@@ -67,10 +66,10 @@ button {
 }
 
 .horisontal_line {
-  border-bottom: 1px solid #934f28;
+  border: 1px solid #934f28;
   margin-bottom: 5px;
-  margin-top: 15px;
-  width: 75%;
+  margin-top: 30px;
+  width: 55%;
 }
 
 /*Footer*/
