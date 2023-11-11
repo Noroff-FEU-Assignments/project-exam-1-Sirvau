@@ -1,0 +1,23 @@
+.christmas_balls_and_image_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 170vh;
+}
+
+.christmas_ball_dark_red {
+  background-image: url(../images/christmas-ball-dark-red-2.png);
+}
+
+.christmas_ball_light_pink {
+  background-image: url(../images/christmas_ball_light_pink.png);
+}
+
+.christmas_ball_dark_red,
+.christmas_ball_light_pink {
+  height: 90vh;
+  width: 90vw;
+  background-size: contain;
+  background-position: center center;
+}
