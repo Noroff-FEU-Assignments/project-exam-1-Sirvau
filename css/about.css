@@ -20,7 +20,7 @@
   border: #edeae4 10px solid;
   align-self: flex-end;
   position: absolute;
-  top: 30%;
+  top: 32%;
   left: 68%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -37,4 +37,23 @@
   width: 90vw;
   background-size: contain;
   background-position: center center;
+}
+
+h1,
+h2 {
+  color: #edeae4;
+  position: absolute;
+  z-index: 1;
+}
+
+h1 {
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+
+h2 {
+  top: 19%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
