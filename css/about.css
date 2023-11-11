@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   height: 180vh;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 .christmas_ball_dark_red {
@@ -40,20 +40,33 @@
 }
 
 h1,
-h2 {
+h2,
+.body_text {
   color: #edeae4;
   position: absolute;
   z-index: 1;
+  left: 50%;
 }
 
 h1 {
   top: 12%;
-  left: 50%;
   transform: translate(-50%, -30%);
 }
 
 h2 {
   top: 19%;
-  left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.body_text {
+  transform: translate(-50%, -50%);
+}
+
+#paragraph_one {
+  top: 55%;
+  color: #630c19;
+}
+
+#paragraph_two {
+  top: 87%;
 }
