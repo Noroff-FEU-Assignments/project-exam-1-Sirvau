@@ -56,6 +56,8 @@ h1 {
 h2 {
   top: 19%;
   transform: translate(-50%, -50%);
+  text-align: center;
+  margin: auto;
 }
 
 .body_text {
@@ -69,4 +71,62 @@ h2 {
 
 #paragraph_two {
   top: 87%;
+}
+
+@media screen and (min-width: 480px) {
+  .christmas_balls_and_image_container {
+    height: 190vh;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .christmas_balls_and_image_container {
+    height: 220vh;
+  }
+
+  .profile_image {
+    height: 250px;
+    width: 250px;
+    top: 32%;
+    left: 65%;
+  }
+
+  h1 {
+    top: 13%;
+  }
+
+  h2 {
+    top: 20%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (min-width: 600px) {
+  .christmas_balls_and_image_container {
+    height: 240vh;
+  }
+}
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 880px) {
+}
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 1440px) {
+}
+
+@media screen and (min-width: 1680px) {
+}
+
+@media screen and (min-width: 1780px) {
+}
+
+@media screen and (min-width: 1920px) {
+}
+
+@media screen and (min-width: 2100px) {
 }

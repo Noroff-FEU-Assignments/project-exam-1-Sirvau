@@ -40,6 +40,8 @@ nav {
   right: 0;
   padding: 10px 20px;
   border-radius: 0 0 0 5px;
+  border-left: 1px solid #934f285d;
+  border-bottom: 1px solid #934f285d;
 }
 
 nav .menu_item {
