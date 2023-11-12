@@ -73,6 +73,13 @@ h2 {
   top: 87%;
 }
 
+.song_citation {
+  max-width: 220px;
+  margin-top: 150px;
+  margin-bottom: auto;
+  text-align: center;
+}
+
 @media screen and (min-width: 480px) {
   .christmas_balls_and_image_container {
     height: 190vh;
@@ -98,6 +105,10 @@ h2 {
   h2 {
     top: 20%;
     transform: translate(-50%, -50%);
+  }
+
+  .song_citation {
+    max-width: 300px;
   }
 }
 
@@ -136,29 +147,45 @@ h2 {
   }
 
   #paragraph_two {
-    top: 72%;
+    top: 75%;
     left: 50%;
   }
 
   .profile_image {
     height: 300px;
     width: 300px;
-    top: 92%;
-    left: 80%;
+    top: 98%;
+    left: 78%;
+  }
+
+  .song_citation {
+    max-width: 260px;
+    margin-top: 250px;
   }
 }
 
-@media screen and (min-width: 880px) {
-}
-
 @media screen and (min-width: 1024px) {
+  h2 {
+    top: 46%;
+  }
+
+  #paragraph_one {
+    top: 57%;
+  }
+
+  #paragraph_two {
+    top: 70%;
+  }
+
   .profile_image {
     top: 97%;
     left: 75%;
   }
-}
 
-@media screen and (min-width: 1280px) {
+  .song_citation {
+    max-width: 800px;
+    line-height: 60px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -200,5 +227,11 @@ h2 {
 
   #paragraph_one {
     top: 60%;
+  }
+
+  .song_citation {
+    margin-top: 300px;
+    line-height: 60px;
+    max-width: 850px;
   }
 }
