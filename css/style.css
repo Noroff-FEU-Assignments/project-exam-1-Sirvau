@@ -83,13 +83,12 @@ button {
 /*Footer*/
 
 footer {
-  margin-top: 200px;
+  margin-top: 500px;
   margin-bottom: auto;
   padding: 60px 0px 10px;
   background-color: #282c11;
   text-align: center;
 }
-
 footer,
 .soMe_links i {
   color: #edeae4;
