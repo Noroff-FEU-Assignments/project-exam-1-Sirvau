@@ -6,10 +6,8 @@ main {
   text-align: center;
 }
 
-#hero_image {
+#welcome_image {
   background-image: url(../images/christmas_town.jpg);
-  height: 30vh;
-  margin-bottom: auto;
 }
 
 h1 {
@@ -33,7 +31,7 @@ h1 {
 }
 
 .christmas_countdown_container {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 .christmas_countdown_clock {
   font-family: Lily Script One, Open-Sans;
@@ -51,6 +49,10 @@ h1 {
   color: #934f28;
 }
 
+footer {
+  margin-top: 150px;
+}
+
 /*Icons */
 .headline_and_icons_container {
   display: flex;
@@ -65,52 +67,54 @@ h1 {
 }
 
 @media screen and (min-width: 480px) {
-  #hero_image {
-    height: 35vh;
+  .christmas_countdown_clock {
+    font-size: 32px;
   }
 }
 @media screen and (min-width: 540px) {
-  #hero_image {
-    height: 40vh;
+  .christmas_countdown_clock {
+    font-size: 36px;
   }
 }
 @media screen and (min-width: 600px) {
-  #hero_image {
-    height: 45vh;
+  .christmas_countdown_clock {
+    font-size: 38px;
   }
 }
 @media screen and (min-width: 768px) {
-  #hero_image {
-    height: 50vh;
-  }
-
   .song_citation {
     max-width: 350px;
+  }
+  .christmas_countdown_clock {
+    font-size: 44px;
   }
 }
 
 @media screen and (min-width: 880px) {
-  #hero_image {
-    background-position-y: center;
+  .christmas_countdown_clock {
+    font-size: 48px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  #hero_image {
-    height: 60vh;
-  }
-
   .song_citation {
     max-width: 370px;
+  }
+
+  .christmas_countdown_clock {
+    font-size: 50px;
   }
 }
 
 @media screen and (min-width: 1280px) {
+  .christmas_countdown_clock {
+    font-size: 50px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-  #hero_image {
-    height: 65vh;
+  .christmas_countdown_clock {
+    font-size: 55px;
   }
 }
 

@@ -63,9 +63,12 @@ nav .active {
 }
 
 #logo,
-.hamburger_icon,
-.menu_item {
+.hamburger_icon {
   color: #934f28;
+}
+
+.menu_item {
+  color: #703e21;
 }
 
 @media screen and (min-width: 480px) {

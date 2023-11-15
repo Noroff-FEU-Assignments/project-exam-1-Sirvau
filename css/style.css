@@ -32,7 +32,8 @@ h2 {
 
 h2,
 .body_text,
-.song_citation {
+.song_citation,
+label {
   font-family: "Merriweather", serif;
 }
 
@@ -48,7 +49,8 @@ h2,
   font-size: 20px;
   font-style: italic;
   color: #861024;
-  margin: auto;
+  margin: 100px auto auto auto;
+  text-align: center;
 }
 
 .text_formatting {
@@ -65,6 +67,11 @@ h2,
 button {
   padding: 10px 30px;
   border-radius: 30px;
+}
+
+.hero_image {
+  height: 30vh;
+  margin-bottom: auto;
 }
 
 .background_images {
@@ -102,20 +109,36 @@ footer,
 
 @media screen and (min-width: 480px) {
   .horisontal_line {
-    width: 70%;
+    width: 60%;
+  }
+
+  .hero_image {
+    height: 35vh;
   }
 }
 @media screen and (min-width: 540px) {
   .horisontal_line {
-    width: 65%;
+    width: 55%;
+  }
+
+  .hero_image {
+    height: 40vh;
   }
 }
 @media screen and (min-width: 600px) {
   .horisontal_line {
-    width: 60%;
+    width: 50%;
+  }
+
+  .hero_image {
+    height: 45vh;
   }
 }
 @media screen and (min-width: 768px) {
+  .hero_image {
+    height: 50vh;
+  }
+
   /* Text  */
   h1 {
     font-size: 35px;
@@ -137,18 +160,22 @@ footer,
   .text_formatting {
     letter-spacing: 3px;
   }
-
-  .horisontal_line {
-    width: 55%;
-  }
 }
 
 @media screen and (min-width: 880px) {
+  .hero_image {
+    background-position-y: center;
+  }
+
   .horisontal_line {
-    width: 50%;
+    width: 45%;
   }
 }
 @media screen and (min-width: 1024px) {
+  .hero_image {
+    height: 60vh;
+  }
+
   /* Text  */
   h1 {
     font-size: 45px;
@@ -168,7 +195,7 @@ footer,
   }
 
   .horisontal_line {
-    width: 42%;
+    width: 40%;
   }
 }
 
@@ -184,8 +211,12 @@ footer,
 }
 
 @media screen and (min-width: 1440px) {
+  .hero_image {
+    height: 65vh;
+  }
+
   .horisontal_line {
-    width: 35%;
+    width: 30%;
   }
 }
 
@@ -211,6 +242,10 @@ footer,
   .song_citation {
     font-size: 30px;
     line-height: 60px;
+  }
+
+  .horisontal_line {
+    width: 28%;
   }
 }
 

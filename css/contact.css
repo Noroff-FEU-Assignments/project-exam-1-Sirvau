@@ -1,0 +1,90 @@
+#holly_image {
+  background-image: url(../images/holly-berries-1082138_1280.jpg);
+}
+
+/* Text */
+
+h1,
+h2,
+.body_text,
+label,
+input {
+  color: #703e21;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.first_column_on_desktop_screens,
+.second_column_on_desktop_screens {
+  margin-top: 50px;
+}
+
+.first_column_on_desktop_screens,
+.second_column_on_desktop_screens,
+.body_text {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.body_text {
+  max-width: 80%;
+}
+
+label,
+input,
+textarea {
+  letter-spacing: 1px;
+}
+
+.song_citation {
+  max-width: 70%;
+}
+/*Fieldset details*/
+
+fieldset {
+  border: 10px solid;
+}
+
+.contact_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 10px;
+}
+
+input,
+textarea {
+  display: block;
+  border: 1px solid;
+  font-size: 16px;
+  background-color: #edeae4;
+  border-radius: 5px;
+  color: #703e21;
+}
+
+input {
+  padding: 10px 20px;
+  margin: 8px 0 15px 0;
+}
+
+textarea {
+  height: 100px;
+  margin: 8px 1px;
+  padding: 20px 25px;
+}
+
+fieldset,
+input,
+textarea {
+  border-color: #703e21;
+}
+
+.submit_button {
+  background-color: #861024;
+  color: #edeae4;
+  border-radius: 30px;
+  margin-top: 50px;
+}
