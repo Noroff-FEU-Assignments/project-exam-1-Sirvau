@@ -68,24 +68,41 @@
             elit, sed do eiusmod tempor.
           </p>
         </div>
-        <form>
+        <form id="contact_form">
           <fieldset>
             <div class="first_column_on_desktop_screens">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" />
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" />
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" />
+              <div class="label_and_input_container">
+                <label for="name">First Name</label>
+                <input type="text" id="first_name" name="name" />
+                <div class="form_error">Please enter your first name</div>
+              </div>
+              <div class="label_and_input_container">
+                <label for="name">Last Name</label>
+                <input type="text" id="last_name" name="name" />
+                <div class="form_error">Please enter your last name</div>
+              </div>
+              <div class="label_and_input_container">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" />
+                <div class="form_error">
+                  Please enter a valid e-mail address
+                </div>
+              </div>
             </div>
             <div class="second_column_on_desktop_screens">
-              <label for="message">Your message</label>
-              <textarea name="message"></textarea>
-              <input
-                class="submit_button button_text"
-                type="submit"
-                value="Submit"
-              />
+              <div class="label_and_input_container">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" />
+                <div class="form_error">Please enter a subject</div>
+              </div>
+              <div class="label_and_input_container">
+                <label for="message">Your message</label>
+                <textarea name="message"></textarea>
+                <div class="form_error">
+                  The message must be at least 4 words long
+                </div>
+              </div>
+              <button class="submit_button button_text">Submit</button>
             </div>
           </fieldset>
         </form>

@@ -83,13 +83,16 @@ textarea {
 
 input {
   padding: 10px 20px;
-  margin: 8px 0 25px 0;
+  margin-top: 2px;
 }
 
 textarea {
   height: 100px;
-  margin: 10px 1px;
   padding: 20px 25px;
+}
+
+.label_and_input_container {
+  margin: 25px 0 auto 0;
 }
 
 input,
@@ -104,24 +107,28 @@ textarea {
   margin-top: 50px;
 }
 
+.form_error {
+  display: none;
+  color: red;
+  font-size: 12px;
+  margin-top: 2px;
+  margin-bottom: 25px;
+}
+
 @media screen and (min-width: 480px) {
   fieldset {
     align-items: flex-start;
   }
 
   textarea {
-    width: 315px;
-    height: 150px;
+    width: 300px;
+    height: 120px;
   }
 }
 
 @media screen and (min-width: 540px) {
   fieldset {
     margin-left: 30px;
-  }
-
-  textarea {
-    width: 350px;
   }
 
   .song_citation {
@@ -152,7 +159,7 @@ textarea {
 
   textarea {
     width: 290px;
-    height: 185px;
+    height: 150px;
   }
 }
 
@@ -164,10 +171,12 @@ textarea {
   fieldset {
     align-items: flex-start;
     flex-direction: row;
+    justify-content: center;
   }
 
   textarea {
-    width: 200px;
+    width: 160px;
+    height: 105px;
   }
 
   .song_citation {
@@ -186,15 +195,6 @@ textarea {
   h2,
   .body_text {
     max-width: 80%;
-  }
-
-  label,
-  input {
-    margin-left: 35px;
-  }
-
-  textarea {
-    width: 240px;
   }
 
   .song_citation {
@@ -240,10 +240,6 @@ textarea {
   label,
   input {
     margin-left: 0;
-  }
-
-  textarea {
-    width: 200px;
   }
 
   .song_citation {
@@ -294,10 +290,6 @@ textarea {
 
   .body_text {
     line-height: 50px;
-  }
-
-  textarea {
-    width: 300px;
   }
 
   .song_citation {
