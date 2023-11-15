@@ -1,4 +1,4 @@
-#holly_image {
+.holly_image {
   background-image: url(../images/holly-berries-1082138_1280.jpg);
 }
 
@@ -45,7 +45,7 @@ textarea {
 /*Fieldset details*/
 
 fieldset {
-  border: 10px solid;
+  border: 15px solid;
 }
 
 .contact_container {
