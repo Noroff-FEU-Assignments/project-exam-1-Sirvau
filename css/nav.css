@@ -42,6 +42,7 @@ nav {
   border-radius: 0 0 0 5px;
   border-left: 1px solid #934f285d;
   border-bottom: 1px solid #934f285d;
+  text-align: center;
 }
 
 nav .menu_item {
@@ -53,7 +54,6 @@ nav .menu_item {
 
 nav .menu_item:hover {
   background-color: #934f28;
-
   color: #edeae4;
   border-radius: 30px;
 }

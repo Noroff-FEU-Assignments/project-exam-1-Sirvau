@@ -76,8 +76,6 @@ h2 {
 .song_citation {
   max-width: 220px;
   margin-top: 150px;
-  margin-bottom: auto;
-  text-align: center;
 }
 
 @media screen and (min-width: 480px) {
