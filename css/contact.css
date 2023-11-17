@@ -54,7 +54,8 @@ fieldset {
 
 label,
 input,
-textarea {
+textarea,
+#success_message {
   letter-spacing: 1px;
 }
 
@@ -79,6 +80,7 @@ textarea {
   background-color: #edeae4;
   border-radius: 5px;
   color: #703e21;
+  font-family: inherit;
 }
 
 input {
@@ -117,6 +119,10 @@ textarea {
 
 #success_message {
   display: none;
+  font-size: 18px;
+  font-family: inherit;
+  color: green;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 480px) {
