@@ -35,7 +35,7 @@
     <link href="../css/nav.css" rel="stylesheet" />
     <link href="../css/contact.css" rel="stylesheet" />
   </head>
-  <body>
+  <body id="body">
     <header class="wrapper">
       <div class="logo_container">
         <a href="../index.html" id="logo">Merry Christmas</a>
@@ -72,37 +72,39 @@
           <fieldset>
             <div class="first_column_on_desktop_screens">
               <div class="label_and_input_container">
-                <label for="name">First Name</label>
-                <input type="text" id="first_name" name="name" />
-                <div class="form_error">Please enter your first name</div>
-              </div>
-              <div class="label_and_input_container">
-                <label for="name">Last Name</label>
-                <input type="text" id="last_name" name="name" />
-                <div class="form_error">Please enter your last name</div>
+                <label for="name">Your Name</label>
+                <input type="text" id="your_name" name="name" />
+                <small id="name_error" class="form_error">
+                  Please enter a name with more than 5 characters
+                </small>
               </div>
               <div class="label_and_input_container">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" />
-                <div class="form_error">
+                <small id="email_error" class="form_error">
                   Please enter a valid e-mail address
-                </div>
+                </small>
               </div>
             </div>
             <div class="second_column_on_desktop_screens">
               <div class="label_and_input_container">
                 <label for="subject">Subject</label>
                 <input type="text" id="subject" name="subject" />
-                <div class="form_error">Please enter a subject</div>
+                <small id="subject_error" class="form_error">
+                  Please enter a subject with more than 15 characters
+                </small>
               </div>
               <div class="label_and_input_container">
                 <label for="message">Your message</label>
-                <textarea name="message"></textarea>
-                <div class="form_error">
-                  The message must be at least 4 words long
-                </div>
+                <textarea id="message" name="message"></textarea>
+                <small id="message_error" class="form_error">
+                  Please enter a message with more than 25 characters.
+                </small>
               </div>
-              <button class="submit_button button_text">Submit</button>
+              <div id="success_message">Form submitted successfully!</div>
+              <button type="submit" class="submit_button button_text">
+                Send
+              </button>
             </div>
           </fieldset>
         </form>

@@ -115,6 +115,10 @@ textarea {
   margin-bottom: 25px;
 }
 
+#success_message {
+  display: none;
+}
+
 @media screen and (min-width: 480px) {
   fieldset {
     align-items: flex-start;
