@@ -1,3 +1,59 @@
+const urlLatestPosts = "https://christmas-blog.siril-vaular.no/wp-json/wp/v2/posts?per_page=6&order_by=date";
+const corsEnabledUrlLatestPosts = "https://noroffcors.onrender.com/" + urlLatestPosts;
+
+export async function getLatestPosts() {
+    try {
+        const response = await fetch(corsEnabledUrlLatestPosts);
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const posts = await response.json();
+
+        // Display posts in the DOM
+        displayLatestPosts(posts);
+    } catch (error) {
+        console.error("Error fetching data:", error);
+    }
+}
+
+function displayLatestPosts(posts) {
+    const postContainer = document.getElementById("post_container");
+
+    posts.forEach((post) => {
+        // Create elements for each post
+        const postLink = document.createElement("a");
+        postLink.classList.add("post_link");
+        postLink.href=`html/blog_specific.html?id=${post.id}&title=${post.title.rendered}`;
+        const postDiv = document.createElement("div");
+        postDiv.classList.add("post");
+
+        const featuredImageElement = document.createElement("img");
+        featuredImageElement.classList.add("featured_image");
+        featuredImageElement.src = post.jetpack_featured_media_url;
+        featuredImageElement.alt = "Featured Image";
+
+        const titleElement = document.createElement("h2");
+        titleElement.classList.add("post_title_carousel");
+        titleElement.textContent = post.title.rendered;
+
+
+
+        // Append elements to the post container
+        postDiv.appendChild(featuredImageElement);
+        postDiv.appendChild(titleElement);
+
+        // Append the post to the post container
+        postLink.appendChild(postDiv)
+        postContainer.appendChild(postLink);
+    });
+}
+
+// Call the function to fetch and display posts
+getLatestPosts();
+
+
 //Christmas countdown
 
 const countDownDate = new Date("Dec 24, 2023 00:00:01").getTime();
