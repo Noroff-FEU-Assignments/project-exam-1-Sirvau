@@ -70,7 +70,7 @@ h1 {
   justify-content: center;
   align-items: center;
   bottom: 40px;
-  margin: 0 120px 0 120px;
+  margin: 0 120px 10px 120px;
   height: 60px;
   background-color: #edeae4;
   border: none;
@@ -169,6 +169,28 @@ footer {
   }
 }
 @media screen and (min-width: 768px) {
+  h1 {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .featured_image {
+    margin-top: 20px;
+  }
+
+  .post_title {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .slide_arrow {
+    margin-left: 275px;
+    margin-right: 275px;
+  }
+  .slide {
+    flex: 1 0 50%;
+  }
+
   .song_citation {
     max-width: 350px;
   }
@@ -178,12 +200,42 @@ footer {
 }
 
 @media screen and (min-width: 880px) {
+  .slide_arrow {
+    margin-left: 350px;
+    margin-right: 350px;
+  }
   .christmas_countdown_clock {
     font-size: 48px;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  #latest_post_container {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  h1 {
+    position: absolute;
+    bottom: 5px;
+  }
+
+  h2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slide_arrow {
+    margin: 0 30px 20px 30px;
+    bottom: 15px;
+  }
+
+  .slide {
+    flex: 1 0 33%;
+  }
+
   .song_citation {
     max-width: 370px;
   }
@@ -206,16 +258,19 @@ footer {
 }
 
 @media screen and (min-width: 1680px) {
+  h1 {
+    bottom: 30px;
+  }
+
+  .slide_arrow {
+    bottom: 40px;
+  }
+
+  #latest_post_container {
+    padding-bottom: 100px;
+  }
+
   .song_citation {
     max-width: 450px;
   }
-}
-
-@media screen and (min-width: 1780px) {
-}
-
-@media screen and (min-width: 1920px) {
-}
-
-@media screen and (min-width: 2100px) {
 }
