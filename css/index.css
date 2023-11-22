@@ -41,7 +41,7 @@ h1 {
 
 .featured_image {
   max-width: 100%;
-  border: 10px solid #703e21;
+  border: 15px solid #703e21;
   margin-top: 30px;
 }
 
@@ -61,7 +61,7 @@ h1 {
   scrollbar-width: none;
   -ms-overflow-style: none;
   margin: 0 0 30px 0;
-  padding: 0 0 100px 0;
+  padding: 0 0 120px 0;
 }
 
 .slide_arrow {
@@ -69,15 +69,14 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  top: 520px;
-  bottom: 0;
+  bottom: 40px;
   margin: 0 120px 0 120px;
   height: 60px;
   background-color: #edeae4;
   border: none;
   width: 60px;
   font-size: 50px;
+  color: #282c11;
   padding: 0;
   opacity: 0.5;
   transition: opacity 100ms;
@@ -135,16 +134,36 @@ footer {
 }
 
 @media screen and (min-width: 480px) {
+  .featured_image {
+    max-width: 90%;
+    margin-top: 30px;
+  }
+
+  .slide_arrow {
+    margin-left: 160px;
+    margin-right: 160px;
+  }
+
   .christmas_countdown_clock {
     font-size: 32px;
   }
 }
 @media screen and (min-width: 540px) {
+  .slide_arrow {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+
   .christmas_countdown_clock {
     font-size: 36px;
   }
 }
 @media screen and (min-width: 600px) {
+  .slide_arrow {
+    margin-left: 210px;
+    margin-right: 210px;
+  }
+
   .christmas_countdown_clock {
     font-size: 38px;
   }
