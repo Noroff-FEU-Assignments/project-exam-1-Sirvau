@@ -56,7 +56,7 @@ h1 {
   width: 100%;
   display: flex;
   overflow: auto;
-  scrollbar-color: #282c11;
+  overflow-y: hidden;
   scroll-behavior: smooth;
   scrollbar-width: none;
   -ms-overflow-style: none;
