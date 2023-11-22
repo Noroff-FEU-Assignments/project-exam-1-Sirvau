@@ -13,49 +13,13 @@ main {
 h1 {
   color: #edeae4;
   display: inline-block;
-  margin: 30px 0 0 0;
+  margin: 80px 0 0 0;
 }
 
 .song_citation {
   max-width: 220px;
   margin-top: 100px;
   margin-bottom: auto;
-}
-
-.christmas_countdown_container {
-  margin-top: 150px;
-}
-.christmas_countdown_clock {
-  font-family: Lily Script One, Open-Sans;
-  font-size: 30px;
-  line-height: 50px;
-}
-
-.christmas_countdown_text {
-  font-family: "Merriweather", serif;
-  font-size: 20px;
-}
-
-.christmas_countdown_clock,
-.christmas_countdown_text {
-  color: #934f28;
-}
-
-footer {
-  margin-top: 150px;
-}
-
-/*Icons */
-.headline_and_icons_container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.material-symbols-outlined {
-  color: #edeae4;
-  font-size: 40px;
-  opacity: 50%;
-  align-self: flex-start;
 }
 
 /* Latest post carousel */
@@ -95,21 +59,24 @@ footer {
   scroll-behavior: smooth;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  margin: 0 0 20px 0;
-  padding: 0;
+  margin: 0 0 30px 0;
+  padding: 0 0 100px 0;
 }
 
 .slide_arrow {
   position: absolute;
   display: flex;
-  top: 215px;
+  justify-content: center;
+  align-items: center;
+
+  top: 520px;
   bottom: 0;
-  margin: 0;
-  height: 100px;
+  margin: 0 120px 0 120px;
+  height: 60px;
   background-color: #edeae4;
   border: none;
-  width: 50px;
-  font-size: 70px;
+  width: 60px;
+  font-size: 50px;
   padding: 0;
   opacity: 0.5;
   transition: opacity 100ms;
@@ -123,22 +90,47 @@ footer {
 #slide_arrow_prev,
 #slide_arrow_next {
   padding-left: 2px;
+  border-radius: 90px;
 }
 
 #slide_arrow_prev {
   left: 0;
-  border-radius: 0 50px 50px 0;
 }
 
 #slide_arrow_next {
   right: 0;
-  border-radius: 50px 0 0 50px;
 }
 
 .slide {
   width: 100%;
   height: 100%;
   flex: 1 0 100%;
+  margin: 0;
+}
+
+/* Christmas countdown clock*/
+
+.christmas_countdown_container {
+  margin-top: 150px;
+}
+.christmas_countdown_clock {
+  font-family: Lily Script One, Open-Sans;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.christmas_countdown_text {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+}
+
+.christmas_countdown_clock,
+.christmas_countdown_text {
+  color: #934f28;
+}
+
+footer {
+  margin-top: 150px;
 }
 
 @media screen and (min-width: 480px) {
