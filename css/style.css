@@ -6,6 +6,9 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+li {
+  list-style-type: none;
+}
 /* Text  */
 h1,
 nav,
