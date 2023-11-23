@@ -1,10 +1,12 @@
 const urlLatestPosts = "https://christmas-blog.siril-vaular.no/wp-json/wp/v2/posts?per_page=6&order_by=date";
 const corsEnabledUrlLatestPosts = "https://noroffcors.onrender.com/" + urlLatestPosts;
+const loader = document.querySelector(".loader");
 
 
 //API call latest posts
 export async function getLatestPosts() {
     try {
+        loader.style.display = "block";
         const response = await fetch(corsEnabledUrlLatestPosts);
 
         if (!response.ok) {
@@ -12,9 +14,11 @@ export async function getLatestPosts() {
         }
 
         const posts = await response.json();
+        loader.style.display = "none";
         displayLatestPosts(posts);
     } catch (error) {
         console.error("Error fetching data:", error);
+        loader.style.display = "none";
     }
 }
 

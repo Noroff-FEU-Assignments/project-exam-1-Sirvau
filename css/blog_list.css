@@ -15,7 +15,7 @@
 }
 
 .each_post_container {
-  border: 2px solid #703e21;
+  border: 2px solid #934f28;
   margin: 20px;
   padding-bottom: 50px;
 }
@@ -44,11 +44,11 @@ h1 {
 .focus_title {
   text-align: center;
   font-size: 25px;
-  margin-bottom: 10px;
 }
 
 .focus_text {
-  margin: 20px 20px 50px 20px;
+  margin: 10px 50px 30px 50px;
+  padding-top: 0;
   line-height: 35px;
   font-size: 18px;
 }
@@ -74,23 +74,24 @@ button {
   margin: auto;
 }
 
+.focus_button {
+  background-color: #edeae4;
+  border: 2px solid #703e21;
+}
+
 .post_button {
   background-color: #861024;
   border: none;
+}
+
+.focus_button:hover {
+  background-color: #934f28;
+  color: #edeae4;
+  border: 2px solid #703e21;
 }
 
 .post_button:hover {
   background-color: #edeae4;
   color: #861024;
   border: 2px solid #861024;
-}
-
-.focus_button {
-  background-color: #edeae4;
-  border: 2px solid #703e21;
-}
-
-.focus_button:hover {
-  background-color: #703e21;
-  border: 2px solid #edeae4;
 }

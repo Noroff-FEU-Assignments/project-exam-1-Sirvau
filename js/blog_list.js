@@ -2,8 +2,12 @@
 const urlAllPosts = "https://christmas-blog.siril-vaular.no/wp-json/wp/v2/posts?per_page=20";
 const corsEnabledUrlAllPosts = "https://noroffcors.onrender.com/" + urlAllPosts;
 
+
+const loader = document.querySelector(".loader");
+
 export async function getAllPosts() {
     try {
+        loader.style.display = "block";
         const response = await fetch(corsEnabledUrlAllPosts);
 
         if (!response.ok) {
@@ -11,11 +15,12 @@ export async function getAllPosts() {
         }
 
         const posts = await response.json();
-        console.log(posts);
+        loader.style.display = "none";
 
         return posts;
     } catch (error) {
         console.error("Error fetching data:", error);
+        loader.style.display = "none";
     }
 }
 
@@ -43,7 +48,7 @@ async function displayFocusPost() {
         focusTitle.textContent = `${post.title.rendered}`;
 
         const focusExcerpt = document.createElement("p");
-        focusExcerpt.classList.add("focus_text");
+        focusExcerpt.classList.add("body_text", "focus_text");
         focusExcerpt.innerHTML = post.excerpt.rendered;
 
         const focusButton = document.createElement("button");
