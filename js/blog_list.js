@@ -38,9 +38,15 @@ async function displayFocusPost() {
 
         const focusPostContainer = document.querySelector(".focus_post_container");
 
+        const focusImageAndTextContainer = document.createElement("div");
+        focusImageAndTextContainer.classList.add("focus_image_and_text_container");
+
+        const focusPostText = document.createElement("div");
+        focusPostText.classList.add("focus_post_text_container");
+
         const focusImage = document.createElement("img");
         focusImage.classList.add("focus_image");
-        focusImage.src = post.jetpack_featured_media_url;
+        focusImage.src = `${post.jetpack_featured_media_url}`;
         focusImage.alt = "Featured Image";
 
         const focusTitle = document.createElement("h2");
@@ -49,20 +55,21 @@ async function displayFocusPost() {
 
         const focusExcerpt = document.createElement("p");
         focusExcerpt.classList.add("body_text", "focus_text");
-        focusExcerpt.innerHTML = post.excerpt.rendered;
+        focusExcerpt.innerHTML = `${post.excerpt.rendered}`;
 
         const focusButton = document.createElement("button");
         focusButton.classList.add("focus_button", "button_text");
         focusButton.addEventListener("click",()=> {
-            window.location.href=`html/blog_specific.html?id=${post.id}&title=${post.title.rendered}`;
+            window.location.href=`blog_specific.html?id=${post.id}&title=${post.title.rendered}`;
         });
 
         focusButton.innerHTML = ("Read more");
 
-
-        focusPostContainer.appendChild(focusImage);
-        focusPostContainer.appendChild(focusTitle);
-        focusPostContainer.appendChild(focusExcerpt);
+        focusPostContainer.appendChild(focusImageAndTextContainer);
+        focusImageAndTextContainer.appendChild(focusImage);
+        focusImageAndTextContainer.appendChild(focusPostText);
+        focusPostText.appendChild(focusTitle);
+        focusPostText.appendChild(focusExcerpt);
         focusPostContainer.appendChild(focusButton);
     } catch (error) {
         console.error("Error fetching focus post:", error);
@@ -93,9 +100,12 @@ async function displayAllPosts() {
             const eachPostContainer = document.createElement("div");
             eachPostContainer.classList.add("each_post_container");
 
+            const eachPostTextContainer = document.createElement("div");
+            eachPostTextContainer.classList.add("each_post_text_container");
+
             const featuredImage = document.createElement("img");
             featuredImage.classList.add("featured_image");
-            featuredImage.src = post.jetpack_featured_media_url;
+            featuredImage.src = `${post.jetpack_featured_media_url}`;
             featuredImage.alt = "Featured Image";
 
             const postTitle = document.createElement("h2");
@@ -104,20 +114,22 @@ async function displayAllPosts() {
 
             const postExcerpt = document.createElement("p");
             postExcerpt.classList.add("body_text");
-            postExcerpt.innerHTML = post.excerpt.rendered;
+            postExcerpt.innerHTML = `${post.excerpt.rendered}`;
+
 
             const postButton = document.createElement("button");
             postButton.classList.add("post_button", "button_text");
             postButton.addEventListener("click",()=> {
-                window.location.href=`html/blog_specific.html?id=${post.id}&title=${post.title.rendered}`;
+                window.location.href=`blog_specific.html?id=${post.id}&title=${post.title.rendered}`;
             });
             postButton.innerHTML = ("Read more");
             
 
             allPostsContainer.appendChild(eachPostContainer);
             eachPostContainer.appendChild(featuredImage);
-            eachPostContainer.appendChild(postTitle);
-            eachPostContainer.appendChild(postExcerpt);
+            eachPostContainer.appendChild(eachPostTextContainer);
+            eachPostTextContainer.appendChild(postTitle);
+            eachPostTextContainer.appendChild(postExcerpt);
             eachPostContainer.appendChild(postButton);
         });
     } catch (error) {
