@@ -13,7 +13,7 @@ main {
 h1 {
   color: #edeae4;
   display: inline-block;
-  margin: 80px 0 0 0;
+  margin: 50px 0 0 0;
 }
 
 .song_citation {
@@ -204,6 +204,11 @@ footer {
 }
 
 @media screen and (min-width: 880px) {
+  #welcome_image {
+    background-position-y: center;
+    height: 55vh;
+  }
+
   h1 {
     font-size: 50px;
   }
@@ -218,6 +223,10 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+  #welcome_image {
+    height: 60vh;
+  }
+
   #latest_post_container {
     padding-top: 50px;
     padding-bottom: 40px;
@@ -255,12 +264,19 @@ footer {
 }
 
 @media screen and (min-width: 1280px) {
+  #welcome_image {
+    height: 65vh;
+  }
   .christmas_countdown_clock {
     font-size: 50px;
   }
 }
 
 @media screen and (min-width: 1440px) {
+  #welcome_image {
+    height: 70vh;
+  }
+
   h1 {
     font-size: 60px;
   }
@@ -271,6 +287,10 @@ footer {
 }
 
 @media screen and (min-width: 1680px) {
+  #welcome_image {
+    height: 75vh;
+  }
+
   h1 {
     bottom: 30px;
     font-size: 65px;
