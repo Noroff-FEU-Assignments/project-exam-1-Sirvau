@@ -40,7 +40,8 @@ h2,
 .body_text,
 .song_citation,
 label,
-.button_text {
+.button_text,
+.form_error {
   font-family: "Merriweather", serif;
 }
 

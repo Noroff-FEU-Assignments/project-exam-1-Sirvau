@@ -5,6 +5,7 @@
 .contact_container {
   background-color: #edeae4;
   border: 15px solid #703e21;
+  padding-bottom: 20px;
 }
 
 /* Text */
@@ -47,8 +48,7 @@ fieldset {
   margin-left: 20px;
 }
 
-.first_column_on_desktop_screens,
-.second_column_on_desktop_screens {
+.first_column_on_desktop_screens {
   margin-top: 50px;
 }
 
@@ -111,8 +111,11 @@ textarea {
 
 .form_error {
   display: none;
-  color: red;
+  color: rgb(166, 4, 4);
   font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  max-width: 250px;
   margin-top: 2px;
   margin-bottom: 25px;
 }
@@ -161,16 +164,6 @@ textarea {
   fieldset {
     align-items: flex-start;
   }
-
-  input {
-    width: 170px;
-    margin-right: 35px;
-  }
-
-  textarea {
-    width: 290px;
-    height: 150px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -179,14 +172,25 @@ textarea {
   }
 
   fieldset {
+    margin: 30px auto auto;
+    padding: 0;
     align-items: flex-start;
     flex-direction: row;
     justify-content: center;
   }
 
+  .first_column_on_desktop_screens {
+    margin-top: 0;
+  }
+
+  input {
+    width: 200px;
+    margin-right: 35px;
+  }
+
+  #subject,
   textarea {
-    width: 160px;
-    height: 105px;
+    width: 250px;
   }
 
   .song_citation {
@@ -196,9 +200,14 @@ textarea {
 
 @media screen and (min-width: 880px) {
   .contact_container {
-    margin-top: -200px;
+    margin-top: -300px;
     margin-left: 100px;
     margin-right: 100px;
+  }
+
+  .first_column_on_desktop_screens,
+  .second_column_on_desktop_screens {
+    margin-left: 30px;
   }
 
   h1,
@@ -214,7 +223,7 @@ textarea {
 
 @media screen and (min-width: 1024px) {
   .contact_container {
-    margin-top: -165px;
+    margin-top: -350px;
     margin-left: 160px;
     margin-right: 160px;
   }
@@ -222,11 +231,10 @@ textarea {
   h1,
   h2,
   .body_text {
-    max-width: 75%;
+    max-width: 80%;
   }
 
   fieldset {
-    margin-left: auto;
     justify-content: center;
   }
 
@@ -242,9 +250,14 @@ textarea {
 
 @media screen and (min-width: 1280px) {
   .contact_container {
-    margin-top: -180px;
+    margin-top: -370px;
     margin-left: 180px;
     margin-right: 180px;
+  }
+
+  .first_column_on_desktop_screens,
+  .second_column_on_desktop_screens {
+    margin-left: 0;
   }
 
   label,
@@ -259,7 +272,7 @@ textarea {
 
 @media screen and (min-width: 1440px) {
   .contact_container {
-    margin-top: -220px;
+    margin-top: -470px;
     margin-left: 230px;
     margin-right: 230px;
     width: 750px;
@@ -278,15 +291,30 @@ textarea {
 
 @media screen and (min-width: 1680px) {
   .contact_container {
-    margin-left: 195px;
-    margin-right: 195px;
-    width: 880px;
+    margin-top: -500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  fieldset {
+    justify-content: space-evenly;
+  }
+
+  input {
+    width: 250px;
+    margin-right: 35px;
+    margin-right: 10px;
+  }
+
+  #subject,
+  textarea {
+    width: 300px;
   }
 
   h1,
   h2,
   .body_text {
-    max-width: 70%;
+    max-width: 80%;
   }
 
   h1 {
