@@ -1,0 +1,103 @@
+#specific_post_image_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.specific_post_header_and_text_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #703e21;
+}
+
+.post_title {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.body_text {
+  margin: 0;
+}
+
+p {
+  margin: 30px 20px 0 20px;
+}
+
+.song_citation {
+  max-width: 250px;
+}
+
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 540px) {
+  .song_citation {
+    line-height: 50px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+}
+
+@media screen and (min-width: 768px) {
+  .specific_post_header_and_text_container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .post_title {
+    line-height: 50px;
+  }
+
+  .song_citation {
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .post_title {
+    line-height: 60px;
+  }
+
+  .song_citation {
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .specific_post_header_and_text_container {
+    margin: 50px 80px 0;
+  }
+
+  p {
+    margin-top: 40px;
+    line-height: 45px;
+  }
+  .song_citation {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .specific_post_header_and_text_container {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .post_title {
+    line-height: 100px;
+  }
+
+  p {
+    line-height: 50px;
+  }
+
+  .song_citation {
+    max-width: 500px;
+    line-height: 60px;
+  }
+}

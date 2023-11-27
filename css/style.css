@@ -28,12 +28,12 @@ h2 {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 2px;
-  line-height: 40px;
 }
 
 h1,
 h2 {
   text-transform: uppercase;
+  line-height: 40px;
 }
 
 h2,
@@ -195,6 +195,7 @@ footer,
 @media screen and (min-width: 880px) {
   .hero_image {
     background-position-y: center;
+    height: 60vh;
   }
 
   .horisontal_line {
@@ -203,7 +204,7 @@ footer,
 }
 @media screen and (min-width: 1024px) {
   .hero_image {
-    height: 60vh;
+    height: 70vh;
   }
 
   /* Text  */
@@ -230,6 +231,10 @@ footer,
 }
 
 @media screen and (min-width: 1280px) {
+  .hero_image {
+    height: 75vh;
+  }
+
   .wrapper {
     margin-left: 100px;
     margin-right: 100px;
@@ -242,7 +247,7 @@ footer,
 
 @media screen and (min-width: 1440px) {
   .hero_image {
-    height: 65vh;
+    height: 95vh;
   }
 
   .horisontal_line {

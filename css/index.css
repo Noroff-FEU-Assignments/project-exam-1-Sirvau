@@ -159,6 +159,10 @@ footer {
   }
 }
 @media screen and (min-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+
   .slide_arrow {
     margin-left: 210px;
     margin-right: 210px;
@@ -200,6 +204,10 @@ footer {
 }
 
 @media screen and (min-width: 880px) {
+  h1 {
+    font-size: 50px;
+  }
+
   .slide_arrow {
     margin-left: 350px;
     margin-right: 350px;
@@ -220,6 +228,7 @@ footer {
   h1 {
     position: absolute;
     bottom: 5px;
+    font-size: 55px;
   }
 
   h2 {
@@ -252,6 +261,10 @@ footer {
 }
 
 @media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 60px;
+  }
+
   .christmas_countdown_clock {
     font-size: 55px;
   }
@@ -260,6 +273,7 @@ footer {
 @media screen and (min-width: 1680px) {
   h1 {
     bottom: 30px;
+    font-size: 65px;
   }
 
   .slide_arrow {

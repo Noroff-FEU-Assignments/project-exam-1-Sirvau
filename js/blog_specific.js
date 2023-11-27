@@ -42,12 +42,12 @@ async function displaySpecificPost() {
             const headerAndTextContainer = document.querySelector(".specific_post_header_and_text_container");
             
             const postSpecificImage = document.createElement("img");
-            postSpecificImage.classList.add("post_specific_image");
+            postSpecificImage.classList.add("post_specific_image" ,"hero_image", "background_images");
             postSpecificImage.src = `${postDetail.jetpack_featured_media_url}`;
             postSpecificImage.alt = "Featured Image";
             
-            const postTitle = document.createElement("h2");
-            postTitle.classList.add("post_title");
+            const postTitle = document.createElement("h1");
+            postTitle.classList.add("post_title", "text_formatting");
             postTitle.innerHTML = `${postDetail.title.rendered}`;
             
             const postBodyText = document.createElement("p");
