@@ -57,7 +57,28 @@ async function displaySpecificPost() {
             imageContainer.appendChild(postSpecificImage);
             headerAndTextContainer.appendChild(postTitle);
             headerAndTextContainer.appendChild(postBodyText);
+
             
+// Modal Image
+
+
+const modal = document.getElementById("myModal");
+const modalImage = document.getElementById("modal_image");
+const specificImage = document.querySelector(".post_specific_image");
+
+
+specificImage.addEventListener("click", function () {
+    modal.style.display = "block";
+    modalImage.src = specificImage.src;
+});
+
+const closeButton = document.querySelector(".close");
+window.addEventListener("click", function (event) {
+    if (event.target === modal || event.target === closeButton) {
+        modal.style.display = "none";
+    }
+});
+         
         }
     } catch (error) {
         console.error("Error fetching specific post:", error);
@@ -66,3 +87,5 @@ async function displaySpecificPost() {
 
 
 displaySpecificPost();
+
+
