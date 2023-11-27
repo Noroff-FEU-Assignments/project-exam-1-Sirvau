@@ -72,8 +72,9 @@ specificImage.addEventListener("click", function () {
     modalImage.src = specificImage.src;
 });
 
+
 const closeButton = document.querySelector(".close");
-window.addEventListener("click", function (event) {
+closeButton.addEventListener("click", function (event) {
     if (event.target === modal || event.target === closeButton) {
         modal.style.display = "none";
     }
