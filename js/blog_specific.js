@@ -78,15 +78,6 @@ window.addEventListener("click", function (event) {
         modal.style.display = "none";
     }
 });
-
-
-closeButton.addEventListener("touchend", closeModal);
-window.addEventListener("touchend", function (event) {
-    if (event.target === modal || event.target === closeButton) {
-        closeModal();
-    }
-    
-});
          
         }
     } catch (error) {
