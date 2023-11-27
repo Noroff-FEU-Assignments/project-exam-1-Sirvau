@@ -5,7 +5,6 @@
   padding-bottom: 50px;
 }
 
-.focus_post_container,
 .each_post_container {
   display: flex;
   flex-direction: column;
@@ -127,15 +126,26 @@ button {
 
   .focus_image_and_text_container {
     margin: 0;
+    display: flex;
     flex-direction: row;
-  }
-
-  .focus_post_text_container {
-    margin: 0;
+    flex-wrap: wrap;
   }
 
   .focus_image {
-    width: 50%;
+    margin: 20px;
+    max-width: 45%;
+  }
+
+  .focus_post_text_container {
+    max-width: 40%;
+  }
+
+  .focus_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 15%;
   }
 }
 @media screen and (min-width: 1024px) {
