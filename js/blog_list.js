@@ -1,7 +1,8 @@
+let posts; 
 
-const urlAllPosts = "https://christmas-blog.siril-vaular.no/wp-json/wp/v2/posts?per_page=20";
+/*Fetching all posts from API*/
+const urlAllPosts = "https://christmas-blog.siril-vaular.no/wp-json/wp/v2/posts?per_page=30";
 const corsEnabledUrlAllPosts = "https://noroffcors.onrender.com/" + urlAllPosts;
-
 
 const loader = document.querySelector(".loader");
 
@@ -14,10 +15,10 @@ export async function getAllPosts() {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
 
-        const posts = await response.json();
+        const fetchedPosts = await response.json();
         loader.style.display = "none";
 
-        return posts;
+        return fetchedPosts;
     } catch (error) {
         console.error("Error fetching data:", error);
         loader.style.display = "none";
@@ -80,70 +81,114 @@ displayFocusPost();
 
 
 
-/*All posts*/
 
-async function displayAllPosts() {
+
+//Creating cards and displaying them with a songverse after every third card 
+
+const cardContainer = document.querySelector(".card_container_of_posts");
+const loadMoreButton = document.getElementById("load_more");
+const cardCountElem = document.getElementById("card_count");
+const cardTotalElem = document.getElementById("card_total");
+
+const cardLimit = 20;
+const cardIncrease = 10;
+const pageCount = Math.ceil(cardLimit / cardIncrease);
+let currentPage = 1;
+
+cardTotalElem.innerHTML = cardLimit;
+
+const handleButtonStatus = () => {
+    if (pageCount === currentPage) {
+        loadMoreButton.classList.add("disabled");
+        loadMoreButton.setAttribute("disabled", true);
+    }
+};
+
+
+const createCard = (post, index) => {
+    const card = document.createElement("div");
+    card.className = "card";
+
+    const featuredImage = document.createElement("img");
+    featuredImage.classList.add("featured_image");
+    featuredImage.src = `${post.jetpack_featured_media_url}`;
+    featuredImage.alt = `${post.title.rendered}`;
+
+    const postTitle = document.createElement("h2");
+    postTitle.classList.add("post_title");
+    postTitle.textContent = `${post.title.rendered}`;
+
+    const postExcerpt = document.createElement("p");
+    postExcerpt.classList.add("body_text");
+    postExcerpt.innerHTML = `${post.excerpt.rendered}`;
+
+    const postButton = document.createElement("button");
+    postButton.classList.add("post_button", "button_text");
+    postButton.addEventListener("click", () => {
+        window.location.href=`blog_specific.html?id=${post.id}&title=${post.title.rendered}`;
+    });
+    postButton.innerHTML = "Read more";
+
+    cardContainer.appendChild(card);
+    card.appendChild(featuredImage);
+    card.appendChild(postTitle);
+    card.appendChild(postExcerpt);
+    card.appendChild(postButton);
+
+
+    //Adding a songverse after every third post
+    const songVerses = [
+        '"Have yourself a merry little Christmas, Let your heart be light"',
+       '"...and the thing that will make them ring, is the carol that you sing, right within your heart"',
+      '"It\'s the best time of the year. I don\'t know if there will be snow, but have a cup of cheer"', '"All the lights are shining so brightly everywhere And the sound of Children\'s laughter fills the air"', '"Sleigh bells ring, are you listening, In the lane, snow is glistening"', '"Jingle bells, jingle bells, Jingle all the way! Oh what fun it is to ride in a one-horse open sleigh"', '"Rockin` around the Christmas tree, let the Christmas spirit ring. Later we\'ll have some pumpkin pie and we\'ll do some caroling"'
+     ];
+     
+
+     if ((index + 1) % 3 === 0 && index !== 0) {
+        const verseCard = document.createElement("div");
+        verseCard.className = "card song_verse_card";
+
+        const verseText = document.createElement("p");
+        verseText.classList.add("text_formatting","song_citation");
+        verseText.textContent = songVerses[(index + 1) / 3 - 1];
+
+        cardContainer.appendChild(verseCard);
+        verseCard.appendChild(verseText);
+    }
+
+    cardContainer.appendChild(card);
+};
+
+
+const addCards = (pageIndex) => {
+    currentPage = pageIndex;
+
+    handleButtonStatus();
+
+    const startRange = (pageIndex - 1) * cardIncrease;
+    const endRange =
+        pageIndex * cardIncrease > cardLimit ? cardLimit : pageIndex * cardIncrease;
+
+    cardCountElem.innerHTML = endRange;
+
+    for (let i = startRange; i < endRange; i++) {
+        createCard(posts[i], i); 
+    }
+   
+};
+
+window.onload = async function () {
     try {
-        const posts = await getAllPosts();
-
-        if (!posts) {
-            throw new Error("Unfortunately, none of the posts were found.");
-        }
-
-        const allPostsContainer = document.querySelector(".all_posts_container");
-
-        posts.forEach((post, index) => {
-            if (index === 0) {
-                return;
-            }
-
-            const eachPostContainer = document.createElement("div");
-            eachPostContainer.classList.add("each_post_container");
-
-            const eachPostTextContainer = document.createElement("div");
-            eachPostTextContainer.classList.add("each_post_text_container");
-
-            const featuredImage = document.createElement("img");
-            featuredImage.classList.add("featured_image");
-            featuredImage.src = `${post.jetpack_featured_media_url}`;
-            featuredImage.alt = "Featured Image";
-
-            const postTitle = document.createElement("h2");
-            postTitle.classList.add("post_title");
-            postTitle.textContent = `${post.title.rendered}`;
-
-            const postExcerpt = document.createElement("p");
-            postExcerpt.classList.add("body_text");
-            postExcerpt.innerHTML = `${post.excerpt.rendered}`;
-
-
-            const postButton = document.createElement("button");
-            postButton.classList.add("post_button", "button_text");
-            postButton.addEventListener("click",()=> {
-                window.location.href=`blog_specific.html?id=${post.id}&title=${post.title.rendered}`;
-            });
-            postButton.innerHTML = ("Read more");
-            
-
-            allPostsContainer.appendChild(eachPostContainer);
-            eachPostContainer.appendChild(featuredImage);
-            eachPostContainer.appendChild(eachPostTextContainer);
-            eachPostTextContainer.appendChild(postTitle);
-            eachPostTextContainer.appendChild(postExcerpt);
-            eachPostContainer.appendChild(postButton);
+        posts = await getAllPosts();
+        addCards(currentPage);
+        loadMoreButton.addEventListener("click", () => {
+            addCards(currentPage + 1);
         });
     } catch (error) {
-        console.error("Error fetching data:", error);
+        console.error("Error loading posts:", error);
     }
-}
-
-displayAllPosts();
+};
 
 
 
-/* Songverses array*/ 
-const songVerses = [
-    '"Have yourself a merry little Christmas, Let your heart be light"',
-    '"...and the thing that will make them ring, is the carol that you sing, right within your heart"',
-    '"It\'s the best time of the year. I don\'t know if there will be snow, but have a cup of cheer"'
-];
+ 

@@ -41,6 +41,7 @@ h2,
 .song_citation,
 label,
 .button_text,
+#load_more,
 .form_error {
   font-family: "Merriweather", serif;
 }
