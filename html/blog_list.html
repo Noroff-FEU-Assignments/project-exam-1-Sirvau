@@ -27,23 +27,28 @@
       src="https://kit.fontawesome.com/81a562339c.js"
       crossorigin="anonymous"
     ></script>
-   
+
     <script defer src="../js/script.js" type="module"></script>
     <script defer src="../js/blog_list.js" type="module"></script>
     <link href="../css/style.css" rel="stylesheet" />
     <link href="../css/nav.css" rel="stylesheet" />
     <link href="../css/blog_list.css" rel="stylesheet" />
     <!-- Hotjar Tracking Code for A Very Merry Christmas Blog -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:3763131,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3763131, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
     <header class="wrapper">
@@ -64,18 +69,19 @@
       </nav>
     </header>
     <main class="wrapper">
-      <body>
-        <h1 class="text_formatting">Posts of Christmas</h1>
-        <div class="loader"></div>
-        <section class="focus_post_container"></section>
-        <section class="card_container_of_posts"></section>
-        <div class="card_actions">
-          <button id="load_more">View more posts<i class="fa-solid fa-chevron-down"></i></button>
-          <span>
-            <span id="card_count"></span>
-            <span id="card_total"></span>
-          </span>
-        </div>
+      <h1 class="text_formatting">Posts of Christmas</h1>
+      <div class="loader"></div>
+      <section class="focus_post_container"></section>
+      <section class="card_container_of_posts"></section>
+      <div class="card_actions">
+        <button id="load_more">
+          View more posts<i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <span>
+          <span id="card_count"></span>
+          <span id="card_total"></span>
+        </span>
+      </div>
     </main>
     <footer>
       <div class="soMe_links">

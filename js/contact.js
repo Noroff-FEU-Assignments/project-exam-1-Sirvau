@@ -16,7 +16,7 @@ const successMessage = document.querySelector("#success_message");
 function validateForm(event) {
   event.preventDefault();
 
-  let isValid = true; // Track overall form validity
+  let isValid = true; 
 
   if (checkLength(yourName.value, 6)) {
     nameError.style.display = "block";
@@ -48,24 +48,21 @@ function validateForm(event) {
   }
 
   if (isValid) {
-    // Clear the form
+    
     yourName.value = "";
     email.value = "";
     subject.value = "";
     message.value = "";
 
-    // Display success message
+    
     successMessage.style.display = "block";
 
 }
 
 }
 
-
 form.addEventListener("submit", validateForm);
 
-
-// Checking length
 function checkLength(value, len) {
   if (value.trim().length < len) {
     return true;
@@ -74,8 +71,6 @@ function checkLength(value, len) {
   }
 }
 
-
-//Validating Email
 function validateEmail(email) {
   const regEx = /\S+@\S+\.\S+/;
   const patternMatches = regEx.test(email);

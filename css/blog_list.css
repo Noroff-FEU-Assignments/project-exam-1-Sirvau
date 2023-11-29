@@ -144,7 +144,7 @@ h1,
 }
 
 #load_more[disabled] {
-  background-color: #edeae4 !important;
+  display: none;
 }
 
 .fa-chevron-down {

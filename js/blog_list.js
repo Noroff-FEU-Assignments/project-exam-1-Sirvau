@@ -195,5 +195,3 @@ window.onload = async function () {
 };
 
 
-
- 
