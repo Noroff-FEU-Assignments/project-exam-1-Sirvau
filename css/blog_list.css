@@ -125,6 +125,12 @@ h1,
   letter-spacing: 2px;
 }
 
+#load_more:hover {
+  background-color: #934f28;
+  border: 2px solid #703e21;
+  color: #edeae4;
+}
+
 .card_actions {
   margin: 8px;
   padding: 16px 0;
@@ -210,7 +216,7 @@ span {
   .focus_image_and_text_container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* Change to space-between for better spacing */
+    justify-content: space-between;
   }
 
   .focus_post_container {
@@ -235,9 +241,25 @@ span {
     flex-direction: column;
     align-items: flex-end;
   }
+
+  #load_more {
+    width: 34%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  h1 {
+    margin-top: 100px;
+  }
+
+  .focus_post_container {
+    margin-top: 30px;
+  }
+
+  .focus_title {
+    font-size: 25px;
+  }
+
   .focus_image_and_text_container {
     position: relative;
     padding-bottom: 10px;
@@ -247,7 +269,12 @@ span {
     position: absolute;
     width: 250px;
     right: 130px;
-    bottom: 10px;
+    bottom: 0;
+    top: 785px;
+  }
+
+  #load_more {
+    width: 32%;
   }
 }
 
@@ -258,8 +285,7 @@ span {
 
   .focus_button_container {
     right: 240px;
-    bottom: 0;
-    top: 775px;
+    top: 830px;
   }
 
   .card_container_of_posts {
@@ -269,6 +295,10 @@ span {
 
   .card {
     width: calc((100% / 3) - 20px);
+  }
+
+  #load_more {
+    width: 30%;
   }
 }
 
@@ -285,25 +315,28 @@ span {
   .focus_button_container {
     right: 270px;
     bottom: 0;
-    top: 850px;
+    top: 920px;
   }
 
   .card {
     width: calc((100% / 3) - 25px);
+  }
+
+  #load_more {
+    width: 26%;
   }
 }
 
 @media screen and (min-width: 1680px) {
   .focus_post_text_container {
     margin-top: 35px;
-  }
-
-  .focus_post_text_container {
     width: 35%;
   }
 
   .focus_title {
     margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 50px;
   }
 
   .focus_text {
@@ -313,18 +346,21 @@ span {
   .focus_button_container {
     right: 350px;
     bottom: 0;
-    top: 900px;
+    top: 960px;
   }
 
   .card {
     width: calc((100% / 3) - 35px);
+  }
+
+  #load_more {
+    width: 24%;
   }
 }
 
 @media screen and (min-width: 1900px) {
   .focus_button_container {
     right: 460px;
-
     top: 920px;
   }
 }
