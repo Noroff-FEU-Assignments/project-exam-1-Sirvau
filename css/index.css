@@ -64,6 +64,10 @@ h1 {
   padding: 0 0 120px 0;
 }
 
+.slides_container::-webkit-scrollbar {
+  display: none;
+}
+
 .slide_arrow {
   position: absolute;
   display: flex;
