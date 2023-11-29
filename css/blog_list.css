@@ -94,21 +94,17 @@ h1,
   height: auto;
 }
 
-.focus_button {
-  background-color: #edeae4;
-  border: 2px solid #703e21;
-}
-
 .post_button {
-  background-color: #861024;
-  border: none;
   margin: auto;
 }
 
+.post_button,
 .focus_button:hover {
   background-color: darkred;
+  border: none;
 }
 
+.focus_button,
 .post_button:hover {
   background-color: #edeae4;
   border: 2px solid #703e21;
@@ -175,6 +171,10 @@ span {
 }
 
 @media screen and (min-width: 768px) {
+  .focus_button_container {
+    margin-top: 20px;
+  }
+
   .card_container_of_posts {
     display: flex;
     flex-wrap: wrap;
@@ -191,12 +191,61 @@ span {
 }
 
 @media screen and (min-width: 880px) {
+  .focus_image_and_text_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Change to space-between for better spacing */
+  }
+
+  .focus_post_container {
+    margin-bottom: 50px;
+  }
+
+  .focus_post_text_container {
+    width: 40%;
+    margin-bottom: 0;
+  }
+
+  .focus_image {
+    margin: 60px 20px 0;
+    width: 60%;
+    height: 60%;
+  }
+
+  .focus_button_container {
+    margin-top: 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .focus_image_and_text_container {
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  .focus_button_container {
+    position: absolute;
+    width: 250px;
+    right: 130px;
+    bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  .focus_text {
+    line-height: 40px;
+  }
+
+  .focus_button_container {
+    right: 240px;
+    bottom: 0;
+    top: 775px;
+  }
+
   .card_container_of_posts {
     margin-left: 0;
     margin-right: 0;
@@ -208,13 +257,58 @@ span {
 }
 
 @media screen and (min-width: 1440px) {
+  .focus_post_text_container {
+    margin-top: 90px;
+  }
+
+  .focus_text {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .focus_button_container {
+    right: 270px;
+    bottom: 0;
+    top: 850px;
+  }
+
   .card {
     width: calc((100% / 3) - 25px);
   }
 }
 
 @media screen and (min-width: 1680px) {
+  .focus_post_text_container {
+    margin-top: 35px;
+  }
+
+  .focus_post_text_container {
+    width: 35%;
+  }
+
+  .focus_title {
+    margin-bottom: 30px;
+  }
+
+  .focus_text {
+    line-height: 45px;
+  }
+
+  .focus_button_container {
+    right: 350px;
+    bottom: 0;
+    top: 900px;
+  }
+
   .card {
     width: calc((100% / 3) - 35px);
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .focus_button_container {
+    right: 460px;
+
+    top: 920px;
   }
 }
