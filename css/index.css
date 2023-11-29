@@ -16,6 +16,10 @@ h1 {
   margin: 50px 0 0 0;
 }
 
+h2 {
+  margin: 10px;
+}
+
 .song_citation {
   max-width: 220px;
   margin-top: 100px;
@@ -285,6 +289,12 @@ footer {
     font-size: 60px;
   }
 
+  .slide_arrow {
+    margin-left: 180px;
+    margin-right: 180px;
+    bottom: 15px;
+  }
+
   .christmas_countdown_clock {
     font-size: 55px;
   }
@@ -298,6 +308,10 @@ footer {
   h1 {
     bottom: 30px;
     font-size: 65px;
+  }
+
+  h2 {
+    line-height: 50px;
   }
 
   .slide_arrow {
