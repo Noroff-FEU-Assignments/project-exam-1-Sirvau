@@ -154,6 +154,10 @@ span {
     margin-left: 55px;
     margin-right: 55px;
   }
+
+  #load_more {
+    width: 60%;
+  }
 }
 
 @media screen and (min-width: 540px) {
@@ -161,12 +165,20 @@ span {
     margin-left: 65px;
     margin-right: 65px;
   }
+
+  #load_more {
+    width: 55%;
+  }
 }
 
 @media screen and (min-width: 600px) {
   .card_container_of_posts {
     margin-left: 75px;
     margin-right: 75px;
+  }
+
+  #load_more {
+    width: 48%;
   }
 }
 
@@ -187,6 +199,10 @@ span {
 
   .song_verse_card {
     display: none;
+  }
+
+  #load_more {
+    width: 38%;
   }
 }
 

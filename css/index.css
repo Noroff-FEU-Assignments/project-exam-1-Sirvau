@@ -152,6 +152,10 @@ footer {
     margin-right: 160px;
   }
 
+  #load_more {
+    width: 30%;
+  }
+
   .christmas_countdown_clock {
     font-size: 32px;
   }

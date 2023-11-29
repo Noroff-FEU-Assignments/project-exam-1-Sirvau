@@ -72,6 +72,12 @@ label,
   letter-spacing: 2px;
 }
 
+.copyright {
+  letter-spacing: 2px;
+  opacity: 0.5;
+  font-size: 18px;
+}
+
 /* Images and buttons */
 
 button {
@@ -110,9 +116,6 @@ button {
   margin: 20px auto;
 }
 
-.copyright {
-  font-size: 18px;
-}
 @keyframes spin {
   0% {
     transform: rotate(0deg);

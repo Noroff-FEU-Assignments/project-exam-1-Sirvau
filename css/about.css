@@ -79,6 +79,10 @@ h2 {
   margin-top: 150px;
 }
 
+nav {
+  z-index: 1;
+}
+
 @media screen and (min-width: 480px) {
   .christmas_balls_and_image_container {
     height: 190vh;
