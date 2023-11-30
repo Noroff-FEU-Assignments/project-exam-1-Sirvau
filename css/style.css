@@ -74,7 +74,6 @@ label,
 
 .copyright {
   letter-spacing: 2px;
-  opacity: 0.5;
   font-size: 18px;
 }
 
@@ -142,7 +141,6 @@ footer,
 .soMe_links i {
   font-size: 30px;
   padding: 10px;
-  opacity: 50%;
 }
 
 @media screen and (min-width: 480px) {
