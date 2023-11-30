@@ -96,7 +96,7 @@ const cardCountElem = document.getElementById("card_count");
 const cardTotalElem = document.getElementById("card_total");
 
 const cardLimit = 20;
-const cardIncrease = 10;
+const cardIncrease = 9;
 const pageCount = Math.ceil(cardLimit / cardIncrease);
 let currentPage = 1;
 
