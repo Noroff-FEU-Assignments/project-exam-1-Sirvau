@@ -58,10 +58,6 @@ async function displayFocusPost() {
         focusExcerpt.classList.add("body_text", "focus_text");
         focusExcerpt.innerHTML = `${post.excerpt.rendered}`;
 
-        const focusButtonContainer = document.createElement("div");
-        focusButtonContainer.classList.add("focus_button_container");
-       
-
         const focusButton = document.createElement("button");
         focusButton.classList.add("focus_button", "button_text");
         focusButton.addEventListener("click",()=> {
@@ -71,12 +67,12 @@ async function displayFocusPost() {
         focusButton.innerHTML = ("Read more");
 
         focusPostContainer.appendChild(focusImageAndTextContainer);
-        focusPostContainer.appendChild(focusButtonContainer);
+       
         focusImageAndTextContainer.appendChild(focusImage);
         focusImageAndTextContainer.appendChild(focusPostText);
         focusPostText.appendChild(focusTitle);
         focusPostText.appendChild(focusExcerpt);
-        focusButtonContainer.appendChild(focusButton);
+        focusPostContainer.appendChild(focusButton);
     } catch (error) {
         console.error("Error fetching focus post:", error);
     }

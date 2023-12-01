@@ -189,8 +189,17 @@ span {
 }
 
 @media screen and (min-width: 768px) {
-  .focus_button_container {
-    margin-top: 20px;
+  .focus_post_container {
+    margin-bottom: 50px;
+  }
+
+  .focus_image {
+    border: 15px solid #934f28;
+  }
+
+  .focus_post_text_container {
+    width: 80%;
+    margin: 40px auto 40px auto;
   }
 
   .card_container_of_posts {
@@ -216,11 +225,7 @@ span {
   .focus_image_and_text_container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .focus_post_container {
-    margin-bottom: 50px;
+    justify-content: space-around;
   }
 
   .focus_post_text_container {
@@ -234,12 +239,12 @@ span {
     height: 60%;
   }
 
-  .focus_button_container {
-    margin-top: 0;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
+  .focus_post_container {
     align-items: flex-end;
+  }
+
+  .focus_button {
+    margin-right: 10%;
   }
 
   #load_more {
@@ -252,8 +257,22 @@ span {
     margin-top: 100px;
   }
 
+  .focus_post_container,
+  .focus_title,
+  .body_text {
+    margin: 10px;
+  }
+
   .focus_post_container {
     margin-top: 30px;
+  }
+
+  .focus_post_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
   }
 
   .focus_title {
@@ -261,16 +280,9 @@ span {
   }
 
   .focus_image_and_text_container {
-    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
     padding-bottom: 10px;
-  }
-
-  .focus_button_container {
-    position: absolute;
-    width: 250px;
-    right: 130px;
-    bottom: 0;
-    top: 785px;
   }
 
   #load_more {
@@ -312,12 +324,9 @@ span {
     margin-right: 50px;
   }
 
-  .focus_button_container {
-    right: 270px;
-    bottom: 0;
-    top: 920px;
+  .focus_button {
+    width: 200px;
   }
-
   .card {
     width: calc((100% / 3) - 25px);
   }
@@ -343,12 +352,9 @@ span {
     line-height: 45px;
   }
 
-  .focus_button_container {
-    right: 350px;
-    bottom: 0;
-    top: 960px;
+  .focus_button {
+    margin-right: 12%;
   }
-
   .card {
     width: calc((100% / 3) - 35px);
   }
@@ -359,8 +365,4 @@ span {
 }
 
 @media screen and (min-width: 1900px) {
-  .focus_button_container {
-    right: 460px;
-    top: 920px;
-  }
 }
