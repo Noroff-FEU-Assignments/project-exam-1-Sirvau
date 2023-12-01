@@ -1,15 +1,25 @@
-.christmas_balls_and_image_container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 190vh;
-  margin-top: 50px;
+nav {
+  z-index: 1;
 }
 
-.christmas_ball_dark_red {
-  background-image: url(../images/christmas-ball-dark-red-2.png);
+#about_wrapper {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.christmas_balls_and_image_container {
+  background-image: url(../images/christmas-ball-dark-red-2.png),
+    url(../images/christmas_ball_light_pink.png),
+    url(../images/christmas-ball-dark-red-2.png);
+  background-position: center top, center center, center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 222vh;
+  margin-top: 50px;
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile_image {
@@ -18,240 +28,422 @@
   width: 220px;
   border-radius: 50%;
   border: #edeae4 10px solid;
-  align-self: flex-end;
-  position: absolute;
-  top: 32%;
-  left: 68%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  margin: auto 0 auto auto;
 }
 
-.christmas_ball_light_pink {
-  background-image: url(../images/christmas_ball_light_pink.png);
-  margin-top: 40px;
+#hidden {
+  display: none;
 }
 
-.christmas_ball_dark_red,
-.christmas_ball_light_pink {
-  height: 95vh;
-  width: 95vw;
-  background-size: contain;
-  background-position: center center;
+.header_container {
+  margin-bottom: 100px;
+  width: 90%;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+h1,
+h2,
+#paragraph_two {
+  color: #edeae4;
 }
 
 h1,
 h2,
 .body_text {
-  color: #edeae4;
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-}
-
-h1 {
-  top: 12%;
-  transform: translate(-50%, -30%);
-}
-
-h2 {
-  top: 20%;
-  transform: translate(-50%, -50%);
   text-align: center;
-  margin: auto;
-  width: 300px;
 }
 
-.body_text {
-  transform: translate(-45%, -50%);
+#paragraph_one,
+#paragraph_two {
+  width: 75%;
 }
 
 #paragraph_one {
-  top: 55%;
-  color: #630c19;
+  margin-top: 5px;
+  color: #861024;
 }
 
 #paragraph_two {
-  top: 87%;
+  margin-top: 260px;
 }
 
 .song_citation {
-  max-width: 220px;
+  max-width: 85%;
   margin-top: 150px;
 }
 
-nav {
-  z-index: 1;
+@media screen and (min-width: 420px) {
+  .christmas_balls_and_image_container {
+    height: 250vh;
+    padding-top: 230px;
+  }
+
+  .profile_image {
+    margin-top: 50px;
+  }
+
+  #paragraph_one {
+    margin-top: 45px;
+  }
+
+  #paragraph_two {
+    margin-top: 350px;
+  }
 }
 
 @media screen and (min-width: 480px) {
   .christmas_balls_and_image_container {
-    height: 190vh;
+    height: 280vh;
+    padding-top: 300px;
+  }
+
+  .header_container {
+    width: 95%;
+  }
+
+  .profile_image {
+    height: 260px;
+    width: 260px;
+  }
+
+  #paragraph_one {
+    margin-top: 70px;
+  }
+
+  #paragraph_two {
+    margin-top: 355px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .body_text {
+    font-size: 18px;
+    line-height: 45px;
   }
 }
 
 @media screen and (min-width: 540px) {
   .christmas_balls_and_image_container {
-    height: 220vh;
+    height: 300vh;
+    padding-top: 350px;
   }
 
   .profile_image {
-    height: 250px;
-    width: 250px;
-    top: 32%;
-    left: 65%;
+    height: 280px;
+    width: 280px;
   }
 
-  h1 {
-    top: 13%;
-    transform: translate(-70%, -30%);
-  }
-
-  h2 {
-    top: 22%;
-    transform: translate(-60%, -110%);
-    width: 350px;
-    text-align: right;
+  #paragraph_two {
+    margin-top: 400px;
   }
 
   .song_citation {
-    max-width: 300px;
+    max-width: 55%;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .christmas_balls_and_image_container {
-    height: 240vh;
+  #about_wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
   }
+
+  .christmas_balls_and_image_container {
+    background-image: url(../images/christmas-ball-dark-red-2.png),
+      url(../images/christmas_ball_light_pink.png);
+    background-position: center top, center bottom;
+    height: 230vh;
+    padding-top: 350px;
+  }
+
   .profile_image {
-    height: 260px;
-    width: 260px;
+    height: 280px;
+    width: 280px;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  #paragraph_one {
+    margin-top: 130px;
+  }
+
+  #paragraph_two {
+    margin-top: 10px;
+    color: #861024;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  #about_wrapper {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .christmas_balls_and_image_container {
+    height: 235vh;
+    padding-top: 390px;
+  }
+
+  .profile_image {
+    height: 320px;
+    width: 320px;
+  }
+
+  #paragraph_one {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #about_wrapper {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  .christmas_balls_and_image_container {
+    height: 255vh;
+    padding-top: 430px;
+  }
+
+  .profile_image {
+    height: 330px;
+    width: 330px;
+    margin-top: 60px;
+  }
+
+  #paragraph_one {
+    margin-top: 100px;
+  }
+
+  .song_citation {
+    max-width: 50%;
   }
 }
 
 @media screen and (min-width: 768px) {
+  #about_wrapper {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+
   .christmas_balls_and_image_container {
-    height: 120vh;
-    margin-top: 50px;
-  }
-
-  .christmas_ball_dark_red {
-    height: 120vh;
-    width: 120vw;
-  }
-
-  .hide {
-    display: none;
-  }
-
-  h1 {
-    top: 35%;
-    transform: translate(-50%, -50%);
-  }
-
-  h2 {
-    top: 42%;
-    width: 450px;
-    text-align: center;
-    transform: translate(-50%, -80%);
-  }
-
-  #paragraph_one {
-    color: #edeae4;
-    top: 56%;
-  }
-
-  #paragraph_two {
-    top: 76%;
-    left: 50%;
+    height: 270vh;
+    padding-top: 470px;
   }
 
   .profile_image {
-    height: 300px;
-    width: 300px;
-    top: 98%;
-    left: 78%;
+    margin-top: 100px;
+  }
+
+  #paragraph_one {
+    margin-top: 130px;
   }
 
   .song_citation {
-    max-width: 260px;
     margin-top: 250px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  h2 {
-    top: 46%;
+@media screen and (min-width: 820px) {
+  .christmas_balls_and_image_container {
+    background-image: url(../images/christmas-ball-dark-red-2.png);
+    background-position: center top;
+    height: 200vh;
+    padding-top: 350px;
+  }
+
+  .header_container {
+    margin-bottom: 20px;
+  }
+
+  .profile_image {
+    display: none;
+  }
+
+  #paragraph_one {
+    margin-top: 10px;
+  }
+
+  #paragraph_two {
+    margin-bottom: 0;
+  }
+
+  #paragraph_one,
+  #paragraph_two {
+    color: #edeae4;
+  }
+
+  #hidden {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: auto;
+  }
+
+  .song_citation {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .christmas_balls_and_image_container {
+    padding-top: 370px;
+  }
+
+  #paragraph_one {
+    margin-top: 10px;
+  }
+
+  #paragraph_two {
+    margin-bottom: 0;
+  }
+
+  #hidden {
+    margin-top: 50px;
+    height: 350px;
+    width: 350px;
+  }
+
+  .song_citation {
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .christmas_balls_and_image_container {
+    padding-top: 420px;
+  }
+
+  .song_citation {
+    max-width: 80%;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  #about_wrapper {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .christmas_balls_and_image_container {
+    height: 225vh;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
   h2 {
-    top: 49%;
-    width: 600px;
+    font-size: 25px;
   }
 
-  #paragraph_one {
-    top: 57%;
+  .body_text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .christmas_balls_and_image_container {
+    padding-top: 600px;
+    height: 240vh;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #about_wrapper {
+    margin-left: 180px;
+    margin-right: 180px;
   }
 
-  #paragraph_two {
-    top: 70%;
-  }
-
-  .profile_image {
-    top: 97%;
-    left: 75%;
+  .christmas_balls_and_image_container {
+    padding-top: 480px;
+    height: 230vh;
   }
 
   .song_citation {
-    max-width: 800px;
-    line-height: 60px;
+    line-height: 50px;
   }
 }
 
 @media screen and (min-width: 1440px) {
+  #about_wrapper {
+    margin-left: 270px;
+    margin-right: 270px;
+  }
+
   .christmas_balls_and_image_container {
-    height: 140vh;
+    padding-top: 540px;
+  }
+}
+
+@media screen and (min-width: 1550px) {
+  #about_wrapper {
+    margin-left: 320px;
+    margin-right: 320px;
   }
 
-  .christmas_ball_dark_red {
-    height: 150vh;
-    width: 150vw;
-  }
-
-  h1 {
-    top: 38%;
-  }
-
-  h2 {
-    top: 50%;
-  }
-
-  #paragraph_one {
-    top: 58%;
-  }
-
-  #paragraph_two {
-    top: 72%;
-  }
-
-  .profile_image {
-    height: 400px;
-    width: 400px;
+  .song_citation {
+    max-width: 100%;
   }
 }
 
 @media screen and (min-width: 1680px) {
+  #about_wrapper {
+    margin-left: 360px;
+    margin-right: 360px;
+  }
+}
+
+@media screen and (min-width: 1750px) {
+  #about_wrapper {
+    margin-left: 380px;
+    margin-right: 380px;
+  }
+  .christmas_balls_and_image_container {
+    padding-top: 530px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  #about_wrapper {
+    margin-left: 550px;
+    margin-right: 550px;
+  }
+  .christmas_balls_and_image_container {
+    padding-top: 400px;
+    height: 155vh;
+    margin-bottom: 100px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
   h2 {
-    top: 52%;
+    font-size: 26px;
   }
 
-  #paragraph_one {
-    top: 60%;
+  .body_text {
+    font-size: 22px;
   }
 
-  .song_citation {
-    margin-top: 300px;
-    max-width: 850px;
+  #paragraph_one,
+  #paragraph_two {
+    line-height: 50px;
+  }
+
+  #hidden {
+    margin: 20px 40px 0 auto;
+    height: 350px;
+    width: 350px;
   }
 }
