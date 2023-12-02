@@ -144,6 +144,10 @@ footer,
 }
 
 @media screen and (min-width: 480px) {
+  h1 {
+    font-size: 32px;
+  }
+
   .horisontal_line {
     width: 60%;
   }
@@ -153,6 +157,10 @@ footer,
   }
 }
 @media screen and (min-width: 540px) {
+  h1 {
+    font-size: 34px;
+  }
+
   .horisontal_line {
     width: 55%;
   }
@@ -162,6 +170,10 @@ footer,
   }
 }
 @media screen and (min-width: 600px) {
+  h1 {
+    font-size: 36px;
+  }
+
   .horisontal_line {
     width: 50%;
   }
@@ -177,7 +189,7 @@ footer,
 
   /* Text  */
   h1 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   h2 {
@@ -199,6 +211,10 @@ footer,
 }
 
 @media screen and (min-width: 880px) {
+  h1 {
+    font-size: 40px;
+  }
+
   .hero_image {
     height: 65vh;
   }
@@ -214,7 +230,7 @@ footer,
 
   /* Text  */
   h1 {
-    font-size: 45px;
+    font-size: 42px;
   }
 
   h2 {
@@ -236,6 +252,10 @@ footer,
 }
 
 @media screen and (min-width: 1280px) {
+  h1 {
+    font-size: 44px;
+  }
+
   .hero_image {
     height: 80vh;
   }
@@ -251,6 +271,10 @@ footer,
 }
 
 @media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 48px;
+  }
+
   .hero_image {
     height: 95vh;
   }
@@ -267,7 +291,7 @@ footer,
   }
 
   h1 {
-    font-size: 60px;
+    font-size: 54px;
   }
 
   h2 {
@@ -294,12 +318,20 @@ footer,
     margin-left: 250px;
     margin-right: 250px;
   }
+
+  h1 {
+    font-size: 56px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
   .wrapper {
     margin-left: 300px;
     margin-right: 300px;
+  }
+
+  h1 {
+    font-size: 60px;
   }
 }
 
