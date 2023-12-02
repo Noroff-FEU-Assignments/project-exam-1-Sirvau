@@ -254,10 +254,6 @@ textarea {
   input {
     margin-left: 0;
   }
-
-  .song_citation {
-    line-height: 50px;
-  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -327,9 +323,5 @@ textarea {
 
   .body_text {
     line-height: 50px;
-  }
-
-  .song_citation {
-    line-height: 60px;
   }
 }

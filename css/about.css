@@ -124,7 +124,6 @@ h2,
   }
 
   .body_text {
-    font-size: 18px;
     line-height: 45px;
   }
 }
@@ -324,7 +323,6 @@ h2,
 
   .song_citation {
     max-width: 90%;
-    line-height: 50px;
   }
 }
 
@@ -347,10 +345,6 @@ h2,
   #about_wrapper {
     margin-left: 90px;
     margin-right: 90px;
-  }
-
-  .body_text {
-    font-size: 20px;
   }
 
   .song_citation {
@@ -436,10 +430,6 @@ h2,
     padding-top: 470px;
     height: 1520px;
     margin-bottom: 100px;
-  }
-
-  .body_text {
-    font-size: 22px;
   }
 
   #paragraph_one,

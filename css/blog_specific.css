@@ -91,10 +91,6 @@ p {
     margin-left: 20px;
     margin-right: 20px;
   }
-
-  .song_citation {
-    line-height: 50px;
-  }
 }
 
 @media screen and (min-width: 600px) {
@@ -195,6 +191,5 @@ p {
 
   .song_citation {
     max-width: 500px;
-    line-height: 60px;
   }
 }

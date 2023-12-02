@@ -223,6 +223,10 @@ footer,
     height: 65vh;
   }
 
+  .song_citation {
+    font-size: 24px;
+  }
+
   .horisontal_line {
     width: 45%;
   }
@@ -241,13 +245,9 @@ footer,
     font-size: 22px;
   }
 
-  .body_text,
-  .button_text {
-    font-size: 18px;
-  }
-
   .song_citation {
-    font-size: 25px;
+    font-size: 26px;
+    line-height: 50px;
   }
 
   .horisontal_line {
