@@ -123,10 +123,6 @@ h2,
     margin-top: 345px;
   }
 
-  h1 {
-    font-size: 32px;
-  }
-
   .body_text {
     font-size: 18px;
     line-height: 45px;
@@ -353,14 +349,6 @@ h2,
     margin-right: 90px;
   }
 
-  h1 {
-    font-size: 50px;
-  }
-
-  h2 {
-    font-size: 25px;
-  }
-
   .body_text {
     font-size: 20px;
   }
@@ -448,14 +436,6 @@ h2,
     padding-top: 470px;
     height: 1520px;
     margin-bottom: 100px;
-  }
-
-  h1 {
-    font-size: 60px;
-  }
-
-  h2 {
-    font-size: 26px;
   }
 
   .body_text {
