@@ -2,6 +2,7 @@
   margin-top: 20px;
   padding-top: 100px;
   background-image: url(../images/holly-berries-1082138_1280.jpg);
+  background-size: contain;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -196,6 +197,15 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
+  .background_image_and_contact_scheme_container {
+    background-size: cover;
+  }
+
+  .contact_container {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
   .body_text {
     text-align: left;
   }
@@ -221,6 +231,11 @@ textarea {
 }
 
 @media screen and (min-width: 880px) {
+  .contact_container {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
   .first_column_on_desktop_screens,
   .second_column_on_desktop_screens {
     margin-left: 15px;
@@ -274,8 +289,8 @@ textarea {
 
 @media screen and (min-width: 1440px) {
   .contact_container {
-    margin-left: 230px;
-    margin-right: 230px;
+    margin-left: 250px;
+    margin-right: 250px;
     width: 750px;
   }
 
@@ -291,19 +306,21 @@ textarea {
 }
 
 @media screen and (min-width: 1680px) {
+  .contact_container {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+
   fieldset {
     justify-content: space-evenly;
   }
 
-  input {
+  input,
+  #subject,
+  textarea {
     width: 250px;
     margin-right: 35px;
     margin-right: 10px;
-  }
-
-  #subject,
-  textarea {
-    width: 300px;
   }
 
   h1,

@@ -65,27 +65,30 @@ h2 {
   scrollbar-width: none;
   -ms-overflow-style: none;
   margin: 0 0 30px 0;
-  padding: 0 0 120px 0;
+  padding: 0 0 20px 0;
 }
 
 .slides_container::-webkit-scrollbar {
   display: none;
 }
 
-.slide_arrow {
-  position: absolute;
+.arrow_buttons_container {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  bottom: 40px;
-  margin: 0 120px 10px 120px;
-  height: 60px;
+  padding-bottom: 40px;
+  margin: auto;
+}
+
+.slide_arrow {
   background-color: #edeae4;
-  border: none;
-  width: 60px;
-  font-size: 50px;
   color: #282c11;
-  padding: 0;
+  font-size: 50px;
+  height: 60px;
+  width: 60px;
+  margin: 0 20px 0 20px;
+  border: none;
+  padding: 0 10px;
   opacity: 0.5;
   transition: opacity 100ms;
 }
@@ -101,14 +104,6 @@ h2 {
   border-radius: 90px;
 }
 
-#slide_arrow_prev {
-  left: 0;
-}
-
-#slide_arrow_next {
-  right: 0;
-}
-
 .slide {
   width: 100%;
   height: 100%;
@@ -120,6 +115,7 @@ h2 {
 
 .christmas_countdown_container {
   margin-top: 150px;
+  padding: 0 10px 0 10px;
 }
 .christmas_countdown_clock {
   font-family: Lily Script One, Open-Sans;
@@ -147,31 +143,16 @@ footer {
     margin-top: 30px;
   }
 
-  .slide_arrow {
-    margin-left: 160px;
-    margin-right: 160px;
-  }
-
   .christmas_countdown_clock {
     font-size: 32px;
   }
 }
 @media screen and (min-width: 540px) {
-  .slide_arrow {
-    margin-left: 180px;
-    margin-right: 180px;
-  }
-
   .christmas_countdown_clock {
     font-size: 36px;
   }
 }
 @media screen and (min-width: 600px) {
-  .slide_arrow {
-    margin-left: 210px;
-    margin-right: 210px;
-  }
-
   .christmas_countdown_clock {
     font-size: 38px;
   }
@@ -191,10 +172,6 @@ footer {
     padding-right: 15px;
   }
 
-  .slide_arrow {
-    margin-left: 275px;
-    margin-right: 275px;
-  }
   .slide {
     flex: 1 0 50%;
   }
@@ -210,51 +187,21 @@ footer {
 @media screen and (min-width: 880px) {
   #welcome_image {
     background-position-y: center;
-    height: 55vh;
   }
 
-  .slide_arrow {
-    margin-left: 350px;
-    margin-right: 350px;
-  }
   .christmas_countdown_clock {
     font-size: 48px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  #welcome_image {
-    height: 60vh;
-  }
-
-  #latest_post_container {
-    padding-top: 50px;
-    padding-bottom: 40px;
-    display: flex;
-    justify-content: center;
-  }
-
-  h1 {
-    position: absolute;
-    bottom: 5px;
-  }
-
   h2 {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .slide_arrow {
-    margin: 0 30px 20px 30px;
-    bottom: 15px;
-  }
-
   .slide {
     flex: 1 0 33%;
-  }
-
-  .song_citation {
-    max-width: 370px;
   }
 
   .christmas_countdown_clock {
@@ -263,45 +210,24 @@ footer {
 }
 
 @media screen and (min-width: 1280px) {
-  #welcome_image {
-    height: 65vh;
-  }
   .christmas_countdown_clock {
     font-size: 50px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  #welcome_image {
-    height: 70vh;
-  }
-
-  .slide_arrow {
-    margin-left: 180px;
-    margin-right: 180px;
-    bottom: 15px;
-  }
-
   .christmas_countdown_clock {
     font-size: 55px;
   }
 }
 
 @media screen and (min-width: 1680px) {
-  #welcome_image {
-    height: 75vh;
-  }
-
   h1 {
     bottom: 30px;
   }
 
   h2 {
     line-height: 50px;
-  }
-
-  .slide_arrow {
-    bottom: 40px;
   }
 
   #latest_post_container {
