@@ -77,27 +77,32 @@ h2,
 
 @media screen and (min-width: 420px) {
   .christmas_balls_and_image_container {
-    height: 250vh;
+    height: 1600px;
     padding-top: 230px;
   }
 
   .profile_image {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   #paragraph_one {
-    margin-top: 45px;
+    margin-top: 15px;
   }
 
   #paragraph_two {
-    margin-top: 350px;
+    margin-top: 340px;
   }
 }
 
 @media screen and (min-width: 480px) {
+  #about_wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
   .christmas_balls_and_image_container {
-    height: 280vh;
-    padding-top: 300px;
+    height: 1780px;
+    padding-top: 250px;
   }
 
   .header_container {
@@ -105,24 +110,21 @@ h2,
   }
 
   .profile_image {
+    margin-top: 50px;
     height: 260px;
     width: 260px;
   }
 
   #paragraph_one {
-    margin-top: 70px;
+    margin-top: 55px;
   }
 
   #paragraph_two {
-    margin-top: 355px;
+    margin-top: 345px;
   }
 
   h1 {
     font-size: 32px;
-  }
-
-  h2 {
-    font-size: 22px;
   }
 
   .body_text {
@@ -133,25 +135,75 @@ h2,
 
 @media screen and (min-width: 540px) {
   .christmas_balls_and_image_container {
-    height: 300vh;
-    padding-top: 350px;
+    height: 1820px;
+    padding-top: 250px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   .profile_image {
+    margin-top: 30px;
+  }
+
+  #paragraph_one {
+    margin-top: 100px;
+  }
+
+  #paragraph_two {
+    margin-top: 360px;
+  }
+
+  .song_citation {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #about_wrapper {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .christmas_balls_and_image_container {
+    height: 1900px;
+    padding-top: 280px;
+  }
+
+  #paragraph_one {
+    margin-top: 110px;
+  }
+
+  #paragraph_two {
+    margin-top: 385px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  #about_wrapper {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .christmas_balls_and_image_container {
+    padding-top: 300px;
+    height: 2000px;
+  }
+
+  .profile_image {
+    margin-top: 80px;
     height: 280px;
     width: 280px;
+  }
+
+  #paragraph_one {
+    margin-top: 90px;
   }
 
   #paragraph_two {
     margin-top: 400px;
   }
-
-  .song_citation {
-    max-width: 55%;
-  }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   #about_wrapper {
     margin-left: 20px;
     margin-right: 20px;
@@ -161,69 +213,23 @@ h2,
     background-image: url(../images/christmas-ball-dark-red-2.png),
       url(../images/christmas_ball_light_pink.png);
     background-position: center top, center bottom;
-    height: 230vh;
-    padding-top: 350px;
+    height: 1650px;
+    padding-top: 400px;
   }
 
   .profile_image {
-    height: 280px;
-    width: 280px;
-  }
-
-  h1 {
-    font-size: 45px;
-  }
-
-  #paragraph_one {
-    margin-top: 130px;
-  }
-
-  #paragraph_two {
-    margin-top: 10px;
-    color: #861024;
-  }
-}
-
-@media screen and (min-width: 650px) {
-  #about_wrapper {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-
-  .christmas_balls_and_image_container {
-    height: 235vh;
-    padding-top: 390px;
-  }
-
-  .profile_image {
+    margin-top: 50px;
     height: 320px;
     width: 320px;
   }
 
   #paragraph_one {
-    margin-top: 70px;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  #about_wrapper {
-    margin-left: 35px;
-    margin-right: 35px;
+    margin-top: 140px;
   }
 
-  .christmas_balls_and_image_container {
-    height: 255vh;
-    padding-top: 430px;
-  }
-
-  .profile_image {
-    height: 330px;
-    width: 330px;
-    margin-top: 60px;
-  }
-
-  #paragraph_one {
-    margin-top: 100px;
+  #paragraph_two {
+    color: #861024;
+    margin-top: 10px;
   }
 
   .song_citation {
@@ -238,8 +244,8 @@ h2,
   }
 
   .christmas_balls_and_image_container {
-    height: 270vh;
-    padding-top: 470px;
+    height: 1700px;
+    padding-top: 400px;
   }
 
   .profile_image {
@@ -247,7 +253,7 @@ h2,
   }
 
   #paragraph_one {
-    margin-top: 130px;
+    margin-top: 160px;
   }
 
   .song_citation {
@@ -256,11 +262,16 @@ h2,
 }
 
 @media screen and (min-width: 820px) {
+  #about_wrapper {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
   .christmas_balls_and_image_container {
     background-image: url(../images/christmas-ball-dark-red-2.png);
     background-position: center top;
-    height: 200vh;
-    padding-top: 350px;
+    padding-top: 310px;
+    height: 1200px;
   }
 
   .header_container {
@@ -272,7 +283,7 @@ h2,
   }
 
   #paragraph_one {
-    margin-top: 10px;
+    margin-top: 0;
   }
 
   #paragraph_two {
@@ -286,7 +297,7 @@ h2,
 
   #hidden {
     display: inline-block;
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: auto;
   }
 
@@ -298,6 +309,7 @@ h2,
 @media screen and (min-width: 880px) {
   .christmas_balls_and_image_container {
     padding-top: 370px;
+    height: 1400px;
   }
 
   #paragraph_one {
@@ -309,19 +321,25 @@ h2,
   }
 
   #hidden {
-    margin-top: 50px;
+    margin-top: 20px;
     height: 350px;
     width: 350px;
   }
 
   .song_citation {
     max-width: 90%;
+    line-height: 50px;
   }
 }
 
 @media screen and (min-width: 950px) {
+  #about_wrapper {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
   .christmas_balls_and_image_container {
-    padding-top: 420px;
+    padding-top: 370px;
   }
 
   .song_citation {
@@ -331,11 +349,8 @@ h2,
 
 @media screen and (min-width: 1024px) {
   #about_wrapper {
-    margin-left: 60px;
-    margin-right: 60px;
-  }
-  .christmas_balls_and_image_container {
-    height: 225vh;
+    margin-left: 90px;
+    margin-right: 90px;
   }
 
   h1 {
@@ -349,24 +364,31 @@ h2,
   .body_text {
     font-size: 20px;
   }
+
+  .song_citation {
+    max-width: 90%;
+  }
 }
 
 @media screen and (min-width: 1150px) {
+  #about_wrapper {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
   .christmas_balls_and_image_container {
-    padding-top: 600px;
-    height: 240vh;
+    padding-top: 380px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   #about_wrapper {
-    margin-left: 180px;
-    margin-right: 180px;
+    margin-left: 200px;
+    margin-right: 200px;
   }
 
   .christmas_balls_and_image_container {
-    padding-top: 480px;
-    height: 230vh;
+    padding-top: 410px;
   }
 
   .song_citation {
@@ -376,19 +398,19 @@ h2,
 
 @media screen and (min-width: 1440px) {
   #about_wrapper {
-    margin-left: 270px;
-    margin-right: 270px;
+    margin-left: 310px;
+    margin-right: 310px;
   }
 
   .christmas_balls_and_image_container {
-    padding-top: 540px;
+    padding-top: 360px;
   }
 }
 
 @media screen and (min-width: 1550px) {
-  #about_wrapper {
-    margin-left: 320px;
-    margin-right: 320px;
+  .christmas_balls_and_image_container {
+    padding-top: 450px;
+    height: 1500px;
   }
 
   .song_citation {
@@ -401,6 +423,10 @@ h2,
     margin-left: 360px;
     margin-right: 360px;
   }
+
+  #hidden {
+    margin-top: 30px;
+  }
 }
 
 @media screen and (min-width: 1750px) {
@@ -409,18 +435,18 @@ h2,
     margin-right: 380px;
   }
   .christmas_balls_and_image_container {
-    padding-top: 530px;
+    padding-top: 490px;
   }
 }
 
 @media screen and (min-width: 1900px) {
   #about_wrapper {
-    margin-left: 550px;
-    margin-right: 550px;
+    margin-left: 450px;
+    margin-right: 450px;
   }
   .christmas_balls_and_image_container {
-    padding-top: 400px;
-    height: 155vh;
+    padding-top: 470px;
+    height: 1520px;
     margin-bottom: 100px;
   }
 
