@@ -143,6 +143,10 @@ footer,
   padding: 10px;
 }
 
+span {
+  display: none;
+}
+
 @media screen and (min-width: 480px) {
   h1 {
     font-size: 32px;
