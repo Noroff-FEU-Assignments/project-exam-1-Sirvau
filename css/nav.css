@@ -71,6 +71,11 @@ nav .active {
   color: #703e21;
 }
 
+/* Footer links in hiding*/
+span {
+  display: none;
+}
+
 @media screen and (min-width: 480px) {
   #logo {
     font-size: 45px;
