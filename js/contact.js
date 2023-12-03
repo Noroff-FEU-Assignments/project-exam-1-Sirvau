@@ -1,7 +1,7 @@
 
 const form = document.querySelector("#contact_form");
 
-const yourName = document.querySelector("#your_name");
+const yourName = document.querySelector("#name");
 const nameError = document.querySelector("#name_error");
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#email_error");
