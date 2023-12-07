@@ -52,10 +52,6 @@ Run the site by clicking the run server button, and it will open in your browser
 Contribute only to agreed tasks.
 When contributing on the blog page, please open a pull request for code review before merging commits into the main branch.
 
-To add or edit posts in API by logging into [WP-login] (https://christmas-blog.siril-vaular.no/wp-login.php?loggedout=true&wp_lang=en_US)
-Username: guest_editor@mail.com
-Password: Editor_guest_needs_a_strong_password!
-
 ## Contact
 
 [My LinkedIn page](https://www.linkedin.com/in/siril-olsen-vaular/)
