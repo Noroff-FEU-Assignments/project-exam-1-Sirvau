@@ -1,68 +1,61 @@
-## Project Exam 1
+# Project Exam 1
 
-## Goal
+![Alt text](<images/Skjermbilde 2023-12-07 123212.png>)
 
-To put into practice the skills learned over your first year of studies.
+The project is a Christmas blog for Christmas lovers, people who search inspiration or like to try out Christmas realated DIY's.
 
-## Brief
-You have been tasked with creating a blog site. You can choose the design and topics covered on the blog, but it should have at least the following pages:
--	Home page
--	About page
--	List of blog posts
--	Blog post specific pages
--	Contact page.
+## Description
 
-### Home Page
+The blog site is built up by HTML, CSS and Vanilla JavaScript, and made responsive by using media queries.
+The blog posts is being fetched trough a headless Wordpress REST API, hosted on the dynamic platform one.com.
 
-The home page should feature a 'Latest Posts' section, designed as a carousel (slider) for the desktop version. As an example, you could display four posts at a time, although you're welcome to adjust this number to better suit your design. Users should be able to click an arrow on the right to scroll through to the next set of posts, and an arrow on the left to view the previous set. For the mobile version, you are free to alter the layout as you deem appropriate, without being tied to a carousel format.
+The content of the blog is going to:
 
-### Blog Page
+- Attract people who are interessted in Christmas related content.
+- Offer inspirational, interessting and relatable Christmas content.
+- Engage the viewers and stengthen their Christmas spirit.
 
-The blog posts page should show the first 10 blogs, and the user should click to view more results which then show underneath the first 10 blogs.
+Technical aspects of the blog:
 
-### Blog Specific Page
+- Responsive website.
+- Intuitive and easy to navigate on various devices.
+- Christmas Countdown clock on index page.
+- Latest post slider on index page, displaying the six latest posts that are published.
+- Contact form with validation on Contact page.
+- Modal on the specific post blog image.
+- Load more function on posts page, increasing with 9 posts at the time. Maximum 30 posts per page.
 
-The content of the blog specific page should be dynamically built using a query string parameter based on whatever link the user clicked. The title of the blog specific page should change based on the blog that has been clicked on e.g. “My Blog | An Article I Wrote”.
+## Built With
 
-If images on the blog specific page are clicked, a modal should appear giving the user a bigger view of that image. Clicking outside the image should hide the modal.
+- [HTML5](https://html.spec.whatwg.org/multipage/)
+- [CSS 3](https://www.w3.org/Style/CSS/Overview.en.html)
+- [JavaScript](https://www.javascript.com/)
 
-### Contact page
+### Installing
 
-Create a contact us page, there should be 4 textboxes on this page.
--	Name (Should be more than 5 characters long)
--	Email address (Must be a valid email address)
--	Subject (Should be more than 15 characters long)
--	Message content (Should be more than 25 characters long)
+1. Clone the repo:
 
-Please use JavaScript for validation, show error messages if the values in the textboxes do not meet the requirements.
+```bash
+git clone git@github.com:Noroff-FEU-Assignments/project-exam-1-Sirvau.git
+```
 
-### WordPress
+Open with Github Desktop.
+Open and edit project in VS code.
 
-The content for your website will be stored on a WordPress installation used as a Headless CMS. It’s important to note that we are only using WordPress to provide an API and add content for the blog. You should not submit a link to a WordPress site, but build your website using HTML, CSS and JavaScript and making a call to the WordPress REST API to fetch the data. 
+## Running
 
-The project has two aspects:
--	API from your WordPress installation
--	Your website built with HTML, CSS and JavaScript
+Use Live Server as a VS code extention.
+Run the site by clicking the run server button, and it will open in your browser.
 
-You will need to add at least 12 blogs for your website. You can use lorem ipsum for paragraphs if you need, but headings, images etc. should all make sense.
+## Contributing
 
-Note that this is an exam, and therefore tutor support will be limited as per the study plan.
+Contribute only to agreed tasks.
+When contributing on the blog page, please open a pull request for code review before merging commits into the main branch.
 
-## Level 1 Process
+To add or edit posts in API by logging into [WP-login] (https://christmas-blog.siril-vaular.no/wp-login.php?loggedout=true&wp_lang=en_US)
+Username: guest_editor@mail.com
+Password: Editor_guest_needs_a_strong_password!
 
-1.	Decide on the theme for the blog you’re going to make
-2.	Create a prototype of the website
-3.	Install WordPress on your web host and add the blogs on the admin panel. 
-4.	Use the GitHub repo created by GitHub Classroom for your files and deploy to Netlify
-5.	Build your website using HTML, CSS and JavaScript making a call to the WordPress REST API to fetch your data.
-6.	Install Hotjar on your website.
-7.	Ask users to test your website, and adjust based on their feedback and any insights from Hotjar.
-8.	Write a report documenting your project (template provided in this repository).
-9.	Submit your report as a PDF and a link to both your Netlify deployment and your GitHub repo.
- 
-## Level 2 Process (optional)
+## Contact
 
-1.	You can try adding a sort, filter, or search to the blog posts page allowing users to find the blog post more easily that they’re looking for. 
-2.	Post the data from the contact form to WordPress so you have the details saved.
-3.	Allow users to submit comments on a blog post, and post this data to WordPress
-
+[My LinkedIn page](https://www.linkedin.com/in/siril-olsen-vaular/)
